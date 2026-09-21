@@ -9,3 +9,12 @@ produce all of it (rebuilt from scratch this session — see the notes file for 
 Rerun the tracer with extra manual seeds as:
 
     python3 scripts/trace.py "Toy Story (Europe).gen" out.json <hex_addr> [<hex_addr> ...]
+
+---
+
+## See it in action
+
+See what mods Pluto has helped me build from disassemblies like this one, with gameplay on real hardware:
+
+- 📸 **Instagram:** [@consolesplayingconsoles](https://www.instagram.com/consolesplayingconsoles/)
+- 🔗 **Everything else:** [beacons.ai/consolesplayingconsoles](https://beacons.ai/consolesplayingconsoles)
