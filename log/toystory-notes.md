@@ -142,7 +142,7 @@ table, ~120 entries each.
 
 Confirmed instances (EU/PAL): call table at `0x42618` (reached from
 `0x42614`), and an identical-shape table at `0x424F8` (reached from
-`0x4224F4`) — same handler pattern reused for (at least) two different
+`0x424F4`) — same handler pattern reused for (at least) two different
 entity/object classes.
 
 ### Unresolved: true per-object function pointers
@@ -252,6 +252,25 @@ closed out (nothing more to gain there; the existing FR + Indo diff pair
 already fully confirms the plain-ASCII encoding and the ~44.6KB script
 span).
 
+## Graphics: RNC compression and sprite frames (USA)
+
+The compressed art the French translators "couldn't decompress" is **Rob
+Northen ProPack (RNC)**. The USA ROM holds 264 `RNC` blocks (243 method 1,
+Huffman; 21 method 2), 3.3 MB unpacked, and every one decodes with a matching
+CRC16 (`scripts/rnc.py`, `rnc.py <rom> list`). Method 2 follows the game's own
+decompressor, entered at `$960` (it checks the `RNC` method-2 magic first).
+
+Sprites were found from the other end: the DMA queue (`$AD1E`) leads to the
+player frame routines (entered at `$B2E` and `$1162`, both reading the frame
+bank), which give the frame format (`scripts/frames.py`). Contact sheets of the raw tiles had failed
+because the tile order only makes sense through each frame's piece list. With
+the format known, a scan for piece runs (each piece's first tile is the sum of
+the earlier pieces' sizes) finds 1218 object frames. Woody's 400 player frames
+sit in the run-length-coded bank at `$82784`; objects store raw tiles. Buzz
+Lightyear's frames, their palette and the frame groups are in `GRAPHICS_USA`
+in `toystory_facts.py`. One caution from using them: Buzz's long run of
+leg-moving frames looks like a walk cycle but is a fall.
+
 ## Open items / next steps if resuming
 
 1. Decode the 2-word string header (`0x01D7`/`0x01D8`-style pair) to get an
@@ -264,6 +283,8 @@ span).
    cutscene commands, etc.) shared across subsystems.
 4. ~~The `REGION_CHECK_USA` signature is a good candidate to hunt for in
    EU/PAL too~~ — done, see below.
+5. The graphics facts are USA coordinates, not yet checked against EU/PAL
+   (`rnc.py <EU rom> list` is the quick first check).
 
 ## Region-check idiom confirmed in EU/PAL too
 

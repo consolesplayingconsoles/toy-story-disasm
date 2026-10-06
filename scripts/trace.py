@@ -7,9 +7,30 @@ Usage: trace.py <rom> <out.json> [extra_seed_hex ...]
 
 Re-runnable: pass hex addresses (no 0x prefix, e.g. 3CE12) as extra seeds
 to grow coverage after manually identifying a dispatch table or handler.
+
+Besides coverage and edges, the output has `labels` (every call target 'sub',
+every other branch target 'loc') and `datarefs` (each absolute or pc-relative
+data address an instruction names, with the instructions that name it), the
+same shape as the smd-disassembly skill's tracer, so names and RAM variables
+can be counted against it.
 """
 import sys, json, re
 import capstone as cs
+
+ABSL = re.compile(r'\$([0-9a-f]+)\.l\b')             # $a10008.l  absolute long
+ABSW = re.compile(r'\$([0-9a-f]+)\.w\b')             # $e6a4.w    absolute short (sign-extended)
+PCR  = re.compile(r'\$([0-9a-f]+)\(pc\)')            # $294(pc)   pc-relative
+
+
+def data_refs(insn):
+    """Data addresses an instruction names (not its branch target)."""
+    if insn.mnemonic.split('.')[0] in ('jmp', 'jsr', 'bsr', 'bra') or insn.mnemonic.startswith(('b', 'db')):
+        return []
+    ops, out = insn.op_str, []
+    out += [int(m.group(1), 16) for m in ABSL.finditer(ops)]
+    out += [(lambda v: (0xFF0000 | v) if v >= 0x8000 else v)(int(m.group(1), 16)) for m in ABSW.finditer(ops)]
+    out += [int(m.group(1), 16) for m in PCR.finditer(ops)]
+    return out
 
 VECTOR_NAMES = {
     0: 'initial_ssp', 1: 'reset_pc', 2: 'bus_error', 3: 'address_error',
@@ -207,6 +228,7 @@ def trace(rom, seeds):
     edges_jump = []
     bad_decodes = []
     idiom_hits = []
+    datarefs = {}
 
     while queue:
         addr = queue.pop()
@@ -236,6 +258,8 @@ def trace(rom, seeds):
                 covered[i] = 1
             code_starts.add(cur)
             history.append((cur, insn.mnemonic, insn.op_str))
+            for a in data_refs(insn):
+                datarefs.setdefault(a, set()).add(cur)
             if len(history) > 16:
                 history.pop(0)
 
@@ -327,7 +351,11 @@ def trace(rom, seeds):
             ranges.append([start, i])
             start = None
 
+    labels = {t: 'loc' for _, t in edges_jump}
+    labels.update({t: 'sub' for _, t in edges_call})
     return {
+        'labels': {'%06X' % a: k for a, k in sorted(labels.items()) if 0 <= a < n},
+        'datarefs': {'%06X' % a: sorted('%06X' % x for x in v) for a, v in sorted(datarefs.items())},
         'rom_size': n,
         'seeds': {hex(k): v for k, v in seeds.items()},
         'coverage_bytes': coverage_bytes,
