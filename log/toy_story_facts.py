@@ -380,12 +380,38 @@ OBJECT_FRAME_BLOCKS_USA = [
 # ---- names and region map (USA coords) ---------------------------------------
 # Read from the code (traces/trace_usa.json). NAMES_USA: address -> name.
 NAMES_USA = {
+    0x000200: 'EntryPoint',          # TMSS/VDP/Z80/PSG init (the standard Sega boot block), then falls into Main
+    0x0002FA: 'Main',                # waits for DMA idle, installs VBlankDefault/HBlankDefault, sets up, runs the game
+    0x00238A: 'VBlankInterrupt',     # level-6 vector: jumps through the RAM pointer at VBlankVector
+    0x002392: 'VBlankDefault',       # the RAM pointer's default: sets VBlankSeen and returns
+    0x00239C: 'HBlankInterrupt',     # level-4 vector: jumps through the RAM pointer at HBlankVector
+    0x0023A4: 'HBlankWriteReg11',    # an HBlank handler other code installs: VDP reg 11 = $03 (per-line hscroll), return
+    0x0023AE: 'HBlankDefault',       # rte: the RAM pointer's default; the unused vectors point into this run of rte (level 2 at the second)
+    0x002210: 'InitVdpRegisters',    # writes VDP registers 0-14, 16-18 and 15 (auto-increment 2)
+    0x0022B2: 'ClearVram',           # VRAM write at $0000, 2048 x 8 longs of zero: all 64 KB
+    0x00233C: 'ClearCram',           # CRAM write at 0, 64 words of zero
+    0x002358: 'ClearVsram',          # VSRAM write at 0, 64 words of zero
     0x000960: 'RncUnpack2',          # RNC method 2: checks the magic, unpacks in place
+    0x00AB1E: 'WaitFrames',          # clears VBlankSeen and waits for it, d0+1 times
     0x00AD1E: 'QueueDma',            # the DMA queue the sprite loaders feed
     0x020960: 'RegionCheck',         # $A10001: expects overseas + NTSC (REGION_CHECK_USA)
     0x07DDCA: 'PaletteTable',        # 16-colour palettes
     0x07DFFA: 'BuzzPalette',
+    0xFFFF0400: 'VBlankVector',      # RAM long: handler the VBlank vector jumps to (Main sets VBlankDefault)
+    0xFFFF0404: 'HBlankVector',      # RAM long: handler the HBlank vector jumps to (Main sets HBlankDefault)
+    0xFFFF04AA: 'VBlankSeen',        # word: VBlankDefault sets it to 1
     0x082784: 'PlayerFrameBank',     # Woody: 400 longs, run-length coded frames
+}
+
+# Instructions whose immediate is a ROM address (a handler installed in a RAM vector): they assemble as labels.
+POINTERS_USA = {
+    0x000314, 0x00031E, 0x0003F8, 0x000402, 0x000472, 0x00047C,
+    0x00071A, 0x000724, 0x002138, 0x00214A, 0x002154, 0x00A6FA,
+    0x00A740, 0x00C0DC, 0x00D192, 0x00E866, 0x01037E, 0x011B88,
+    0x012FA0, 0x013932, 0x016856, 0x0174E4, 0x023F2A, 0x023F34,
+    0x0240DE, 0x0240E8, 0x02412A, 0x024134, 0x024392, 0x02439C,
+    0x0244D4, 0x024536, 0x077520, 0x07752A, 0x07755E, 0x077568,
+    0x07B24E, 0x07B258, 0x07B278, 0x07B282, 0x07D862, 0x07D8C2,
 }
 
 # (start, end inclusive, what, confidence: HIGH, MED, LOW as above)
