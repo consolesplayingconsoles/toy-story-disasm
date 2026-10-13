@@ -7,7 +7,8 @@ A frame is a header ([w0 = 6 + 6*count][count][size in words] and its pieces: st
 counts only once written as source) followed by its tiles (a leaf asset: raw for objects,
 run-length coded for Woody). Each frame is decoded here before its tiles are listed: Woody's
 from his bank (all 400, by tools/frames.py's rules), Buzz's by walking each group in
-GRAPHICS_USA['buzz_frames'] frame by frame. Writes addresses and names only, no game bytes.
+GRAPHICS_USA['buzz_frames'] frame by frame, the other characters' runs (OBJECT_GROUPS_USA) the same
+way. Writes addresses and names only, no game bytes.
 """
 import os, struct, sys
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'log'))
@@ -60,6 +61,20 @@ for name, v in g['buzz_frames'].items():
         k += 1
         p = end
     assert k == want, '%s: %d frames, expected %d' % (name, k, want)
+
+for first, want, who in f.OBJECT_GROUPS_USA:
+    p, k = first, 0
+    while k < want:
+        fe = frame_end(p)
+        if fe is None:                     # runs keep frames a few bytes apart: the next one is close
+            q = next((q for q in range(p + 2, p + 18, 2) if frame_end(q)), None)
+            assert q is not None, '%s: frame %d not found after %X' % (who, k, p)
+            p = q
+            continue
+        w0, end = fe
+        out.append((p + w0, end - 1, '%s_%02d_tiles' % (who, k), 'tiles'))
+        k += 1
+        p = end
 
 out.sort()
 with open(sys.argv[2], 'w') as w:

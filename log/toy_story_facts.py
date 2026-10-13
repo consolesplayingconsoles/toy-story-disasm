@@ -663,6 +663,20 @@ RNC_BLOCKS_USA = [
     (0x3FC7DC, 0x3FD00B),
 ]
 
+# Object frame runs identified by rendering every frame of the run (2026-10-13): (first frame,
+# frames, character). A run is walked frame by frame from its first frame (tools/frame_blocks.py
+# checks each one). Runs not listed are not identified yet; within Mr Potato Head's run the last 8
+# frames (a large close-up) are left out.
+OBJECT_GROUPS_USA = [
+    (0x0FDBF6, 65, 'rex'),
+    (0x13C67C, 40, 'plane'),
+    (0x158E08, 49, 'hamm'),
+    (0x177060, 26, 'rc'),
+    (0x1C5278, 48, 'babyface'),
+    (0x1D9064, 49, 'mr_potato_head'),
+    (0x22E6A8, 20, 'scud'),
+]
+
 # ---- data blocks for the rebuild (tools/rebuild.py BLOCKS) --------------------
 # (start, end inclusive, name, format): a block counts as source only when every byte of it is what
 # the format says, decoded by a tool here. A sprite frame is a header (structured: it counts only
