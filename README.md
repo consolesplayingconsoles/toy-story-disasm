@@ -19,7 +19,7 @@ addresses and diff ranges only.
 
 The two are separate compiles, not a patch of each other: about 98% of the bytes differ, so
 addresses do not carry over. Facts are recorded per revision and anchored by byte signature where
-practical. The fan translations used for diffs are listed in `log/toystory_facts.py`.
+practical. The fan translations used for diffs are listed in `log/toy_story_facts.py`.
 
 ## Building
 
@@ -37,8 +37,8 @@ The tracer takes extra manual seeds after the output file. Python 3 only; `trace
 
 | | |
 |---|---|
-| `log/toystory-notes.md` | the narrative: identity, dispatch idioms, coverage, text, graphics |
-| `log/toystory_facts.py` | the structured facts, per revision, with a confidence per entry: identities, names (`NAMES_USA`), the region map (`REGIONS_USA`, `RNC_BLOCKS_USA`) |
+| `log/toy-story-notes.md` | the narrative: identity, dispatch idioms, coverage, text, graphics |
+| `log/toy_story_facts.py` | the structured facts, per revision, with a confidence per entry: identities, names (`NAMES_USA`), the region map (`REGIONS_USA`, `RNC_BLOCKS_USA`) |
 | `traces/` | the USA and EU/PAL traces (addresses only: code, labels, data references) and the ROM-to-ROM diff ranges |
 | `tools/trace.py` | recursive-descent 68000 tracer |
 | `tools/rnc.py` | Rob Northen ProPack (RNC) decoder: list or extract the compressed blocks |
@@ -50,6 +50,9 @@ The tracer takes extra manual seeds after the output file. Python 3 only; `trace
 
 <!-- progress -->
 ```
+SOURCE (USA ROM)                       no rebuild recorded yet (traces/rebuild_usa.json)
+  done: equivalent source        0.0%  rebuilds byte-identical; named code with symbolic operands, named data in a decoded format
+  rebuilds byte-identical           -  not recorded yet
 ROM MAP (USA ROM)                      358 regions: 267 high, 91 medium, 0 low confidence (incl. 264 RNC blocks, 90 sprite frame runs)
   mapped, bytes                 79.2%  high and medium confidence ranges
 GAME CODE (USA ROM, traced)            448 subroutines, 135510 bytes of code

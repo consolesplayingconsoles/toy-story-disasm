@@ -233,7 +233,7 @@ a Japanese script translation, despite the source repo's name
    touching code needs this).
 2. `0x20975` (1 byte): `0x80` → `0x00`. This is the trailing immediate byte
    of `CMPI.B #$80,D0` inside the game's hardware-region-check routine —
-   see `REGION_CHECK_USA` in `toystory_facts.py`. The routine reads the
+   see `REGION_CHECK_USA` in `toy_story_facts.py`. The routine reads the
    Genesis version register at `$A10001` (bit7 = domestic/overseas, bit6 =
    NTSC/PAL), masks to those two bits, and compares against `$80`
    (overseas+NTSC = USA). The patch changes the target to `$00`
@@ -268,7 +268,7 @@ the format known, a scan for piece runs (each piece's first tile is the sum of
 the earlier pieces' sizes) finds 1218 object frames. Woody's 400 player frames
 sit in the run-length-coded bank at `$82784`; objects store raw tiles. Buzz
 Lightyear's frames, their palette and the frame groups are in `GRAPHICS_USA`
-in `toystory_facts.py`. One caution from using them: Buzz's long run of
+in `toy_story_facts.py`. One caution from using them: Buzz's long run of
 leg-moving frames looks like a walk cycle but is a fall.
 
 Mapping the frames (2026-10-13). A player bank entry's low 24 bits are the frame's offset
