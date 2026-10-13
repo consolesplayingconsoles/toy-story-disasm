@@ -14,7 +14,11 @@
 "end": 653,
 "kind": "code",
 "name": "code_000200",
-"symbolic": false
+"symbolic": false,
+"labels": 10,
+"named_labels": 0,
+"fields": 3,
+"named_fields": 0
 },
 {
 "start": 654,
@@ -28,14 +32,22 @@
 "end": 1757,
 "kind": "code",
 "name": "loc_0002FA",
-"symbolic": false
+"symbolic": false,
+"labels": 34,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 1758,
 "end": 1839,
 "kind": "code",
 "name": "sub_0006DE",
-"symbolic": false
+"symbolic": false,
+"labels": 4,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 1840,
@@ -49,70 +61,110 @@
 "end": 2161,
 "kind": "code",
 "name": "sub_000754",
-"symbolic": true
+"symbolic": false,
+"labels": 16,
+"named_labels": 0,
+"fields": 14,
+"named_fields": 0
 },
 {
 "start": 2162,
 "end": 2215,
 "kind": "code",
 "name": "sub_000872",
-"symbolic": true
+"symbolic": false,
+"labels": 3,
+"named_labels": 0,
+"fields": 3,
+"named_fields": 0
 },
 {
 "start": 2216,
 "end": 2227,
 "kind": "code",
 "name": "sub_0008A8",
-"symbolic": true
+"symbolic": true,
+"labels": 1,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 2228,
 "end": 2251,
 "kind": "code",
 "name": "sub_0008B4",
-"symbolic": true
+"symbolic": true,
+"labels": 0,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 2252,
 "end": 2263,
 "kind": "code",
 "name": "sub_0008CC",
-"symbolic": true
+"symbolic": true,
+"labels": 1,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 2264,
 "end": 2399,
 "kind": "code",
 "name": "sub_0008D8",
-"symbolic": true
+"symbolic": false,
+"labels": 6,
+"named_labels": 0,
+"fields": 6,
+"named_fields": 0
 },
 {
 "start": 2400,
 "end": 2849,
 "kind": "code",
 "name": "RncUnpack2",
-"symbolic": true
+"symbolic": false,
+"labels": 55,
+"named_labels": 0,
+"fields": 3,
+"named_fields": 0
 },
 {
 "start": 2850,
 "end": 2861,
 "kind": "code",
 "name": "sub_000B22",
-"symbolic": true
+"symbolic": true,
+"labels": 1,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 2862,
 "end": 3187,
 "kind": "code",
 "name": "sub_000B2E",
-"symbolic": false
+"symbolic": false,
+"labels": 10,
+"named_labels": 0,
+"fields": 1,
+"named_fields": 0
 },
 {
 "start": 3188,
 "end": 4131,
 "kind": "code",
 "name": "sub_000C74",
-"symbolic": false
+"symbolic": false,
+"labels": 35,
+"named_labels": 0,
+"fields": 1,
+"named_fields": 0
 },
 {
 "start": 4132,
@@ -126,161 +178,253 @@
 "end": 4135,
 "kind": "code",
 "name": "loc_001026",
-"symbolic": true
+"symbolic": true,
+"labels": 0,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 4136,
 "end": 4449,
 "kind": "code",
 "name": "sub_001028",
-"symbolic": false
+"symbolic": false,
+"labels": 9,
+"named_labels": 0,
+"fields": 3,
+"named_fields": 0
 },
 {
 "start": 4450,
 "end": 5113,
 "kind": "code",
 "name": "sub_001162",
-"symbolic": false
+"symbolic": false,
+"labels": 14,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 5114,
 "end": 5903,
 "kind": "code",
 "name": "sub_0013FA",
-"symbolic": false
+"symbolic": false,
+"labels": 21,
+"named_labels": 0,
+"fields": 1,
+"named_fields": 0
 },
 {
 "start": 5904,
 "end": 5959,
 "kind": "code",
 "name": "sub_001710",
-"symbolic": false
+"symbolic": false,
+"labels": 2,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 5960,
 "end": 6017,
 "kind": "code",
 "name": "sub_001748",
-"symbolic": false
+"symbolic": false,
+"labels": 2,
+"named_labels": 0,
+"fields": 1,
+"named_fields": 0
 },
 {
 "start": 6018,
 "end": 6063,
 "kind": "code",
 "name": "sub_001782",
-"symbolic": false
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 6064,
 "end": 6361,
 "kind": "code",
 "name": "sub_0017B0",
-"symbolic": false
+"symbolic": false,
+"labels": 7,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 6362,
 "end": 6417,
 "kind": "code",
 "name": "sub_0018DA",
-"symbolic": false
+"symbolic": false,
+"labels": 2,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 6418,
 "end": 6463,
 "kind": "code",
 "name": "sub_001912",
-"symbolic": false
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 6464,
 "end": 6553,
 "kind": "code",
 "name": "sub_001940",
-"symbolic": false
+"symbolic": false,
+"labels": 1,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 6554,
 "end": 6595,
 "kind": "code",
 "name": "sub_00199A",
-"symbolic": false
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 6596,
 "end": 6775,
 "kind": "code",
 "name": "sub_0019C4",
-"symbolic": false
+"symbolic": false,
+"labels": 5,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 6776,
 "end": 6803,
 "kind": "code",
 "name": "sub_001A78",
-"symbolic": false
+"symbolic": false,
+"labels": 1,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 6804,
 "end": 7599,
 "kind": "code",
 "name": "sub_001A94",
-"symbolic": false
+"symbolic": false,
+"labels": 1,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 7600,
 "end": 8223,
 "kind": "code",
 "name": "sub_001DB0",
-"symbolic": false
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 8224,
 "end": 8347,
 "kind": "code",
 "name": "sub_002020",
-"symbolic": false
+"symbolic": false,
+"labels": 1,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 8348,
 "end": 8503,
 "kind": "code",
 "name": "sub_00209C",
-"symbolic": false
+"symbolic": false,
+"labels": 2,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 8504,
 "end": 8513,
 "kind": "code",
 "name": "sub_002138",
-"symbolic": false
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 8514,
 "end": 8719,
 "kind": "code",
 "name": "sub_002142",
-"symbolic": false
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 8720,
 "end": 8881,
 "kind": "code",
 "name": "sub_002210",
-"symbolic": false
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 8882,
 "end": 8927,
 "kind": "code",
 "name": "sub_0022B2",
-"symbolic": false
+"symbolic": false,
+"labels": 1,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 8928,
 "end": 8973,
 "kind": "code",
 "name": "sub_0022E0",
-"symbolic": false
+"symbolic": false,
+"labels": 1,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 8974,
@@ -294,14 +438,22 @@
 "end": 9047,
 "kind": "code",
 "name": "sub_00233C",
-"symbolic": false
+"symbolic": false,
+"labels": 1,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 9048,
 "end": 9075,
 "kind": "code",
 "name": "sub_002358",
-"symbolic": false
+"symbolic": false,
+"labels": 1,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 9076,
@@ -315,7 +467,11 @@
 "end": 9105,
 "kind": "code",
 "name": "code_00238A",
-"symbolic": false
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 9106,
@@ -329,7 +485,11 @@
 "end": 9123,
 "kind": "code",
 "name": "code_00239C",
-"symbolic": false
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 9124,
@@ -343,7 +503,11 @@
 "end": 9137,
 "kind": "code",
 "name": "code_0023AE",
-"symbolic": true
+"symbolic": true,
+"labels": 0,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 9138,
@@ -357,14 +521,22 @@
 "end": 9701,
 "kind": "code",
 "name": "sub_00251E",
-"symbolic": false
+"symbolic": false,
+"labels": 6,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 9702,
 "end": 9961,
 "kind": "code",
 "name": "sub_0025E6",
-"symbolic": false
+"symbolic": false,
+"labels": 7,
+"named_labels": 0,
+"fields": 21,
+"named_fields": 0
 },
 {
 "start": 9962,
@@ -378,35 +550,55 @@
 "end": 10349,
 "kind": "code",
 "name": "sub_002782",
-"symbolic": false
+"symbolic": false,
+"labels": 7,
+"named_labels": 0,
+"fields": 18,
+"named_fields": 0
 },
 {
 "start": 10350,
 "end": 10587,
 "kind": "code",
 "name": "sub_00286E",
-"symbolic": false
+"symbolic": false,
+"labels": 10,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 10588,
 "end": 10793,
 "kind": "code",
 "name": "sub_00295C",
-"symbolic": false
+"symbolic": false,
+"labels": 7,
+"named_labels": 0,
+"fields": 13,
+"named_fields": 0
 },
 {
 "start": 10794,
 "end": 10985,
 "kind": "code",
 "name": "sub_002A2A",
-"symbolic": false
+"symbolic": false,
+"labels": 6,
+"named_labels": 0,
+"fields": 14,
+"named_fields": 0
 },
 {
 "start": 10986,
 "end": 11101,
 "kind": "code",
 "name": "sub_002AEA",
-"symbolic": false
+"symbolic": false,
+"labels": 3,
+"named_labels": 0,
+"fields": 5,
+"named_fields": 0
 },
 {
 "start": 11102,
@@ -420,14 +612,22 @@
 "end": 12107,
 "kind": "code",
 "name": "sub_002C5C",
-"symbolic": false
+"symbolic": false,
+"labels": 24,
+"named_labels": 0,
+"fields": 18,
+"named_fields": 0
 },
 {
 "start": 12108,
 "end": 12603,
 "kind": "code",
 "name": "sub_002F4C",
-"symbolic": false
+"symbolic": false,
+"labels": 12,
+"named_labels": 0,
+"fields": 16,
+"named_fields": 0
 },
 {
 "start": 12604,
@@ -441,70 +641,110 @@
 "end": 12665,
 "kind": "code",
 "name": "sub_003150",
-"symbolic": false
+"symbolic": false,
+"labels": 2,
+"named_labels": 0,
+"fields": 1,
+"named_fields": 0
 },
 {
 "start": 12666,
 "end": 12815,
 "kind": "code",
 "name": "sub_00317A",
-"symbolic": false
+"symbolic": false,
+"labels": 6,
+"named_labels": 0,
+"fields": 22,
+"named_fields": 0
 },
 {
 "start": 12816,
 "end": 13743,
 "kind": "code",
 "name": "sub_003210",
-"symbolic": false
+"symbolic": false,
+"labels": 41,
+"named_labels": 0,
+"fields": 68,
+"named_fields": 0
 },
 {
 "start": 13744,
 "end": 13831,
 "kind": "code",
 "name": "sub_0035B0",
-"symbolic": false
+"symbolic": false,
+"labels": 2,
+"named_labels": 0,
+"fields": 7,
+"named_fields": 0
 },
 {
 "start": 13832,
 "end": 13919,
 "kind": "code",
 "name": "sub_003608",
-"symbolic": false
+"symbolic": false,
+"labels": 2,
+"named_labels": 0,
+"fields": 7,
+"named_fields": 0
 },
 {
 "start": 13920,
 "end": 14131,
 "kind": "code",
 "name": "sub_003660",
-"symbolic": false
+"symbolic": false,
+"labels": 10,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 14132,
 "end": 14741,
 "kind": "code",
 "name": "sub_003734",
-"symbolic": false
+"symbolic": false,
+"labels": 22,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 14742,
 "end": 14799,
 "kind": "code",
 "name": "sub_003996",
-"symbolic": false
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 14800,
 "end": 15181,
 "kind": "code",
 "name": "sub_0039D0",
-"symbolic": false
+"symbolic": false,
+"labels": 15,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 15182,
 "end": 15497,
 "kind": "code",
 "name": "sub_003B4E",
-"symbolic": false
+"symbolic": false,
+"labels": 7,
+"named_labels": 0,
+"fields": 2,
+"named_fields": 0
 },
 {
 "start": 15498,
@@ -518,21 +758,33 @@
 "end": 16101,
 "kind": "code",
 "name": "sub_003DCA",
-"symbolic": false
+"symbolic": false,
+"labels": 14,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 16102,
 "end": 16241,
 "kind": "code",
 "name": "sub_003EE6",
-"symbolic": false
+"symbolic": false,
+"labels": 7,
+"named_labels": 0,
+"fields": 2,
+"named_fields": 0
 },
 {
 "start": 16242,
 "end": 16377,
 "kind": "code",
 "name": "sub_003F72",
-"symbolic": false
+"symbolic": false,
+"labels": 1,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 16378,
@@ -546,7 +798,11 @@
 "end": 16407,
 "kind": "code",
 "name": "code_004000",
-"symbolic": true
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 1,
+"named_fields": 0
 },
 {
 "start": 16408,
@@ -560,35 +816,55 @@
 "end": 18807,
 "kind": "code",
 "name": "sub_0045B0",
-"symbolic": false
+"symbolic": false,
+"labels": 37,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 18808,
 "end": 18871,
 "kind": "code",
 "name": "sub_004978",
-"symbolic": false
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 18872,
 "end": 18959,
 "kind": "code",
 "name": "sub_0049B8",
-"symbolic": false
+"symbolic": false,
+"labels": 4,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 18960,
 "end": 19615,
 "kind": "code",
 "name": "sub_004A10",
-"symbolic": false
+"symbolic": false,
+"labels": 22,
+"named_labels": 0,
+"fields": 70,
+"named_fields": 0
 },
 {
 "start": 19616,
 "end": 19641,
 "kind": "code",
 "name": "sub_004CA0",
-"symbolic": false
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 19642,
@@ -602,14 +878,22 @@
 "end": 20033,
 "kind": "code",
 "name": "loc_004CE6",
-"symbolic": false
+"symbolic": false,
+"labels": 11,
+"named_labels": 0,
+"fields": 4,
+"named_fields": 0
 },
 {
 "start": 20034,
 "end": 20047,
 "kind": "code",
 "name": "sub_004E42",
-"symbolic": false
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 20048,
@@ -623,7 +907,11 @@
 "end": 21265,
 "kind": "code",
 "name": "loc_004E7C",
-"symbolic": false
+"symbolic": false,
+"labels": 43,
+"named_labels": 0,
+"fields": 5,
+"named_fields": 0
 },
 {
 "start": 21266,
@@ -637,7 +925,11 @@
 "end": 22141,
 "kind": "code",
 "name": "sub_005662",
-"symbolic": true
+"symbolic": true,
+"labels": 2,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 22142,
@@ -651,7 +943,11 @@
 "end": 22279,
 "kind": "code",
 "name": "sub_005684",
-"symbolic": false
+"symbolic": false,
+"labels": 5,
+"named_labels": 0,
+"fields": 5,
+"named_fields": 0
 },
 {
 "start": 22280,
@@ -665,7 +961,11 @@
 "end": 22721,
 "kind": "code",
 "name": "sub_005778",
-"symbolic": false
+"symbolic": false,
+"labels": 12,
+"named_labels": 0,
+"fields": 23,
+"named_fields": 0
 },
 {
 "start": 22722,
@@ -679,7 +979,11 @@
 "end": 23257,
 "kind": "code",
 "name": "sub_005ABE",
-"symbolic": true
+"symbolic": true,
+"labels": 2,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 23258,
@@ -693,7 +997,11 @@
 "end": 23505,
 "kind": "code",
 "name": "sub_005B3E",
-"symbolic": false
+"symbolic": false,
+"labels": 6,
+"named_labels": 0,
+"fields": 15,
+"named_fields": 0
 },
 {
 "start": 23506,
@@ -707,7 +1015,11 @@
 "end": 23651,
 "kind": "code",
 "name": "sub_005C06",
-"symbolic": false
+"symbolic": false,
+"labels": 5,
+"named_labels": 0,
+"fields": 7,
+"named_fields": 0
 },
 {
 "start": 23652,
@@ -721,7 +1033,11 @@
 "end": 23849,
 "kind": "code",
 "name": "sub_005C84",
-"symbolic": false
+"symbolic": false,
+"labels": 6,
+"named_labels": 0,
+"fields": 7,
+"named_fields": 0
 },
 {
 "start": 23850,
@@ -735,7 +1051,11 @@
 "end": 24107,
 "kind": "code",
 "name": "sub_005D50",
-"symbolic": false
+"symbolic": false,
+"labels": 7,
+"named_labels": 0,
+"fields": 21,
+"named_fields": 0
 },
 {
 "start": 24108,
@@ -749,7 +1069,11 @@
 "end": 24267,
 "kind": "code",
 "name": "sub_005E6A",
-"symbolic": false
+"symbolic": false,
+"labels": 5,
+"named_labels": 0,
+"fields": 3,
+"named_fields": 0
 },
 {
 "start": 24268,
@@ -763,7 +1087,11 @@
 "end": 24865,
 "kind": "code",
 "name": "sub_005F10",
-"symbolic": false
+"symbolic": false,
+"labels": 19,
+"named_labels": 0,
+"fields": 16,
+"named_fields": 0
 },
 {
 "start": 24866,
@@ -777,7 +1105,11 @@
 "end": 25543,
 "kind": "code",
 "name": "sub_0062EC",
-"symbolic": false
+"symbolic": false,
+"labels": 7,
+"named_labels": 0,
+"fields": 21,
+"named_fields": 0
 },
 {
 "start": 25544,
@@ -791,7 +1123,11 @@
 "end": 25895,
 "kind": "code",
 "name": "sub_006408",
-"symbolic": false
+"symbolic": false,
+"labels": 14,
+"named_labels": 0,
+"fields": 21,
+"named_fields": 0
 },
 {
 "start": 25896,
@@ -805,7 +1141,11 @@
 "end": 26375,
 "kind": "code",
 "name": "sub_0065E8",
-"symbolic": false
+"symbolic": false,
+"labels": 14,
+"named_labels": 0,
+"fields": 21,
+"named_fields": 0
 },
 {
 "start": 26376,
@@ -819,7 +1159,11 @@
 "end": 26595,
 "kind": "code",
 "name": "sub_0067C8",
-"symbolic": true
+"symbolic": true,
+"labels": 2,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 26596,
@@ -833,7 +1177,11 @@
 "end": 26839,
 "kind": "code",
 "name": "sub_006844",
-"symbolic": false
+"symbolic": false,
+"labels": 5,
+"named_labels": 0,
+"fields": 11,
+"named_fields": 0
 },
 {
 "start": 26840,
@@ -847,7 +1195,11 @@
 "end": 27199,
 "kind": "code",
 "name": "sub_00695C",
-"symbolic": false
+"symbolic": false,
+"labels": 7,
+"named_labels": 0,
+"fields": 22,
+"named_fields": 0
 },
 {
 "start": 27200,
@@ -861,7 +1213,11 @@
 "end": 27379,
 "kind": "code",
 "name": "sub_006A72",
-"symbolic": true
+"symbolic": false,
+"labels": 7,
+"named_labels": 0,
+"fields": 13,
+"named_fields": 0
 },
 {
 "start": 27380,
@@ -875,7 +1231,11 @@
 "end": 27785,
 "kind": "code",
 "name": "sub_006B54",
-"symbolic": false
+"symbolic": false,
+"labels": 13,
+"named_labels": 0,
+"fields": 29,
+"named_fields": 0
 },
 {
 "start": 27786,
@@ -896,7 +1256,11 @@
 "end": 28203,
 "kind": "code",
 "name": "sub_006CF6",
-"symbolic": false
+"symbolic": false,
+"labels": 13,
+"named_labels": 0,
+"fields": 29,
+"named_fields": 0
 },
 {
 "start": 28204,
@@ -917,7 +1281,11 @@
 "end": 28383,
 "kind": "code",
 "name": "sub_006E98",
-"symbolic": false
+"symbolic": false,
+"labels": 5,
+"named_labels": 0,
+"fields": 4,
+"named_fields": 0
 },
 {
 "start": 28384,
@@ -931,7 +1299,11 @@
 "end": 28747,
 "kind": "code",
 "name": "sub_006F54",
-"symbolic": false
+"symbolic": false,
+"labels": 9,
+"named_labels": 0,
+"fields": 19,
+"named_fields": 0
 },
 {
 "start": 28748,
@@ -945,14 +1317,22 @@
 "end": 29241,
 "kind": "code",
 "name": "loc_0071BE",
-"symbolic": false
+"symbolic": false,
+"labels": 7,
+"named_labels": 0,
+"fields": 11,
+"named_fields": 0
 },
 {
 "start": 29242,
 "end": 29359,
 "kind": "code",
 "name": "sub_00723A",
-"symbolic": false
+"symbolic": false,
+"labels": 5,
+"named_labels": 0,
+"fields": 13,
+"named_fields": 0
 },
 {
 "start": 29360,
@@ -966,7 +1346,11 @@
 "end": 29769,
 "kind": "code",
 "name": "sub_007338",
-"symbolic": false
+"symbolic": false,
+"labels": 8,
+"named_labels": 0,
+"fields": 17,
+"named_fields": 0
 },
 {
 "start": 29770,
@@ -980,7 +1364,11 @@
 "end": 30473,
 "kind": "code",
 "name": "sub_007546",
-"symbolic": false
+"symbolic": false,
+"labels": 21,
+"named_labels": 0,
+"fields": 31,
+"named_fields": 0
 },
 {
 "start": 30474,
@@ -1001,7 +1389,11 @@
 "end": 31189,
 "kind": "code",
 "name": "sub_0077F2",
-"symbolic": false
+"symbolic": false,
+"labels": 25,
+"named_labels": 0,
+"fields": 37,
+"named_fields": 0
 },
 {
 "start": 31190,
@@ -1022,7 +1414,11 @@
 "end": 32057,
 "kind": "code",
 "name": "sub_007BA8",
-"symbolic": false
+"symbolic": false,
+"labels": 22,
+"named_labels": 0,
+"fields": 30,
+"named_fields": 0
 },
 {
 "start": 32058,
@@ -1043,7 +1439,11 @@
 "end": 32833,
 "kind": "code",
 "name": "sub_007E26",
-"symbolic": false
+"symbolic": false,
+"labels": 15,
+"named_labels": 0,
+"fields": 22,
+"named_fields": 0
 },
 {
 "start": 32834,
@@ -1064,7 +1464,11 @@
 "end": 33035,
 "kind": "code",
 "name": "sub_00808A",
-"symbolic": false
+"symbolic": false,
+"labels": 4,
+"named_labels": 0,
+"fields": 4,
+"named_fields": 0
 },
 {
 "start": 33036,
@@ -1078,7 +1482,11 @@
 "end": 33205,
 "kind": "code",
 "name": "sub_008134",
-"symbolic": false
+"symbolic": false,
+"labels": 4,
+"named_labels": 0,
+"fields": 4,
+"named_fields": 0
 },
 {
 "start": 33206,
@@ -1092,7 +1500,11 @@
 "end": 33653,
 "kind": "code",
 "name": "sub_0081DE",
-"symbolic": false
+"symbolic": false,
+"labels": 20,
+"named_labels": 0,
+"fields": 33,
+"named_fields": 0
 },
 {
 "start": 33654,
@@ -1134,7 +1546,11 @@
 "end": 33983,
 "kind": "code",
 "name": "sub_008498",
-"symbolic": true
+"symbolic": false,
+"labels": 3,
+"named_labels": 0,
+"fields": 2,
+"named_fields": 0
 },
 {
 "start": 33984,
@@ -1148,7 +1564,11 @@
 "end": 34447,
 "kind": "code",
 "name": "sub_0084E4",
-"symbolic": false
+"symbolic": false,
+"labels": 21,
+"named_labels": 0,
+"fields": 31,
+"named_fields": 0
 },
 {
 "start": 34448,
@@ -1169,7 +1589,11 @@
 "end": 35173,
 "kind": "code",
 "name": "sub_00876E",
-"symbolic": false
+"symbolic": false,
+"labels": 21,
+"named_labels": 0,
+"fields": 30,
+"named_fields": 0
 },
 {
 "start": 35174,
@@ -1183,7 +1607,11 @@
 "end": 35451,
 "kind": "code",
 "name": "sub_008A2A",
-"symbolic": false
+"symbolic": false,
+"labels": 5,
+"named_labels": 0,
+"fields": 4,
+"named_fields": 0
 },
 {
 "start": 35452,
@@ -1197,7 +1625,11 @@
 "end": 35663,
 "kind": "code",
 "name": "sub_008AA6",
-"symbolic": false
+"symbolic": false,
+"labels": 10,
+"named_labels": 0,
+"fields": 15,
+"named_fields": 0
 },
 {
 "start": 35664,
@@ -1421,7 +1853,11 @@
 "end": 37911,
 "kind": "code",
 "name": "sub_0092DC",
-"symbolic": false
+"symbolic": false,
+"labels": 14,
+"named_labels": 0,
+"fields": 20,
+"named_fields": 0
 },
 {
 "start": 37912,
@@ -1435,7 +1871,11 @@
 "end": 38445,
 "kind": "code",
 "name": "sub_00945C",
-"symbolic": false
+"symbolic": false,
+"labels": 21,
+"named_labels": 0,
+"fields": 33,
+"named_fields": 0
 },
 {
 "start": 38446,
@@ -1449,21 +1889,33 @@
 "end": 39001,
 "kind": "code",
 "name": "sub_0096E6",
-"symbolic": false
+"symbolic": false,
+"labels": 9,
+"named_labels": 0,
+"fields": 10,
+"named_fields": 0
 },
 {
 "start": 39002,
 "end": 39107,
 "kind": "code",
 "name": "sub_00985A",
-"symbolic": true
+"symbolic": false,
+"labels": 2,
+"named_labels": 0,
+"fields": 14,
+"named_fields": 0
 },
 {
 "start": 39108,
 "end": 39605,
 "kind": "code",
 "name": "sub_0098C4",
-"symbolic": false
+"symbolic": false,
+"labels": 15,
+"named_labels": 0,
+"fields": 2,
+"named_fields": 0
 },
 {
 "start": 39606,
@@ -1477,182 +1929,286 @@
 "end": 39749,
 "kind": "code",
 "name": "sub_009B1A",
-"symbolic": false
+"symbolic": false,
+"labels": 2,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 39750,
 "end": 40095,
 "kind": "code",
 "name": "sub_009B46",
-"symbolic": false
+"symbolic": false,
+"labels": 4,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 40096,
 "end": 40243,
 "kind": "code",
 "name": "sub_009CA0",
-"symbolic": false
+"symbolic": false,
+"labels": 5,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 40244,
 "end": 40451,
 "kind": "code",
 "name": "sub_009D34",
-"symbolic": false
+"symbolic": false,
+"labels": 8,
+"named_labels": 0,
+"fields": 2,
+"named_fields": 0
 },
 {
 "start": 40452,
 "end": 40699,
 "kind": "code",
 "name": "sub_009E04",
-"symbolic": false
+"symbolic": false,
+"labels": 10,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 40700,
 "end": 40857,
 "kind": "code",
 "name": "sub_009EFC",
-"symbolic": false
+"symbolic": false,
+"labels": 3,
+"named_labels": 0,
+"fields": 3,
+"named_fields": 0
 },
 {
 "start": 40858,
 "end": 41075,
 "kind": "code",
 "name": "sub_009F9A",
-"symbolic": false
+"symbolic": false,
+"labels": 4,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 41076,
 "end": 41231,
 "kind": "code",
 "name": "sub_00A074",
-"symbolic": false
+"symbolic": false,
+"labels": 6,
+"named_labels": 0,
+"fields": 4,
+"named_fields": 0
 },
 {
 "start": 41232,
 "end": 41479,
 "kind": "code",
 "name": "sub_00A110",
-"symbolic": false
+"symbolic": false,
+"labels": 16,
+"named_labels": 0,
+"fields": 6,
+"named_fields": 0
 },
 {
 "start": 41480,
 "end": 41483,
 "kind": "code",
 "name": "sub_00A208",
-"symbolic": true
+"symbolic": true,
+"labels": 0,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 41484,
 "end": 41735,
 "kind": "code",
 "name": "sub_00A20C",
-"symbolic": false
+"symbolic": false,
+"labels": 16,
+"named_labels": 0,
+"fields": 6,
+"named_fields": 0
 },
 {
 "start": 41736,
 "end": 42255,
 "kind": "code",
 "name": "sub_00A308",
-"symbolic": false
+"symbolic": false,
+"labels": 25,
+"named_labels": 0,
+"fields": 10,
+"named_fields": 0
 },
 {
 "start": 42256,
 "end": 42493,
 "kind": "code",
 "name": "sub_00A510",
-"symbolic": false
+"symbolic": false,
+"labels": 4,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 42494,
 "end": 42605,
 "kind": "code",
 "name": "sub_00A5FE",
-"symbolic": false
+"symbolic": false,
+"labels": 5,
+"named_labels": 0,
+"fields": 1,
+"named_fields": 0
 },
 {
 "start": 42606,
 "end": 42667,
 "kind": "code",
 "name": "sub_00A66E",
-"symbolic": false
+"symbolic": false,
+"labels": 5,
+"named_labels": 0,
+"fields": 3,
+"named_fields": 0
 },
 {
 "start": 42668,
 "end": 42685,
 "kind": "code",
 "name": "sub_00A6AC",
-"symbolic": false
+"symbolic": false,
+"labels": 1,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 42686,
 "end": 42703,
 "kind": "code",
 "name": "sub_00A6BE",
-"symbolic": false
+"symbolic": false,
+"labels": 1,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 42704,
 "end": 42721,
 "kind": "code",
 "name": "sub_00A6D0",
-"symbolic": false
+"symbolic": false,
+"labels": 1,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 42722,
 "end": 42739,
 "kind": "code",
 "name": "sub_00A6E2",
-"symbolic": false
+"symbolic": false,
+"labels": 1,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 42740,
 "end": 42827,
 "kind": "code",
 "name": "sub_00A6F4",
-"symbolic": false
+"symbolic": false,
+"labels": 1,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 42828,
 "end": 42877,
 "kind": "code",
 "name": "sub_00A74C",
-"symbolic": false
+"symbolic": false,
+"labels": 2,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 42878,
 "end": 42927,
 "kind": "code",
 "name": "sub_00A77E",
-"symbolic": false
+"symbolic": false,
+"labels": 2,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 42928,
 "end": 42943,
 "kind": "code",
 "name": "sub_00A7B0",
-"symbolic": false
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 42944,
 "end": 43063,
 "kind": "code",
 "name": "sub_00A7C0",
-"symbolic": false
+"symbolic": false,
+"labels": 8,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 43064,
 "end": 43209,
 "kind": "code",
 "name": "sub_00A838",
-"symbolic": false
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 43210,
 "end": 43261,
 "kind": "code",
 "name": "sub_00A8CA",
-"symbolic": false
+"symbolic": false,
+"labels": 2,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 43262,
@@ -1666,7 +2222,11 @@
 "end": 43385,
 "kind": "code",
 "name": "sub_00A930",
-"symbolic": false
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 43386,
@@ -1715,21 +2275,33 @@
 "end": 43829,
 "kind": "code",
 "name": "sub_00AB1E",
-"symbolic": false
+"symbolic": false,
+"labels": 1,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 43830,
 "end": 43923,
 "kind": "code",
 "name": "sub_00AB36",
-"symbolic": false
+"symbolic": false,
+"labels": 1,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 43924,
 "end": 44083,
 "kind": "code",
 "name": "sub_00AB94",
-"symbolic": false
+"symbolic": false,
+"labels": 4,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 44084,
@@ -1743,63 +2315,99 @@
 "end": 44241,
 "kind": "code",
 "name": "sub_00ACA0",
-"symbolic": false
+"symbolic": false,
+"labels": 1,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 44242,
 "end": 44317,
 "kind": "code",
 "name": "sub_00ACD2",
-"symbolic": false
+"symbolic": false,
+"labels": 3,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 44318,
 "end": 44523,
 "kind": "code",
 "name": "QueueDma",
-"symbolic": false
+"symbolic": false,
+"labels": 3,
+"named_labels": 0,
+"fields": 6,
+"named_fields": 0
 },
 {
 "start": 44524,
 "end": 44617,
 "kind": "code",
 "name": "sub_00ADEC",
-"symbolic": false
+"symbolic": false,
+"labels": 3,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 44618,
 "end": 44869,
 "kind": "code",
 "name": "sub_00AE4A",
-"symbolic": true
+"symbolic": false,
+"labels": 2,
+"named_labels": 0,
+"fields": 1,
+"named_fields": 0
 },
 {
 "start": 44870,
 "end": 44951,
 "kind": "code",
 "name": "sub_00AF46",
-"symbolic": false
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 44952,
 "end": 45157,
 "kind": "code",
 "name": "sub_00AF98",
-"symbolic": false
+"symbolic": false,
+"labels": 11,
+"named_labels": 0,
+"fields": 1,
+"named_fields": 0
 },
 {
 "start": 45158,
 "end": 45269,
 "kind": "code",
 "name": "sub_00B066",
-"symbolic": false
+"symbolic": false,
+"labels": 10,
+"named_labels": 0,
+"fields": 10,
+"named_fields": 0
 },
 {
 "start": 45270,
 "end": 45279,
 "kind": "code",
 "name": "sub_00B0D6",
-"symbolic": true
+"symbolic": true,
+"labels": 0,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 45280,
@@ -1813,7 +2421,11 @@
 "end": 46621,
 "kind": "code",
 "name": "loc_00B15C",
-"symbolic": false
+"symbolic": false,
+"labels": 50,
+"named_labels": 0,
+"fields": 63,
+"named_fields": 0
 },
 {
 "start": 46622,
@@ -1827,28 +2439,44 @@
 "end": 47095,
 "kind": "code",
 "name": "loc_00B62C",
-"symbolic": false
+"symbolic": false,
+"labels": 18,
+"named_labels": 0,
+"fields": 25,
+"named_fields": 0
 },
 {
 "start": 47096,
 "end": 47131,
 "kind": "code",
 "name": "sub_00B7F8",
-"symbolic": true
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 1,
+"named_fields": 0
 },
 {
 "start": 47132,
 "end": 47161,
 "kind": "code",
 "name": "sub_00B81C",
-"symbolic": true
+"symbolic": true,
+"labels": 0,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 47162,
 "end": 47195,
 "kind": "code",
 "name": "sub_00B83A",
-"symbolic": true
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 1,
+"named_fields": 0
 },
 {
 "start": 47196,
@@ -2261,7 +2889,11 @@
 "end": 50121,
 "kind": "code",
 "name": "sub_00BFDC",
-"symbolic": false
+"symbolic": false,
+"labels": 25,
+"named_labels": 0,
+"fields": 109,
+"named_fields": 0
 },
 {
 "start": 50122,
@@ -2275,7 +2907,11 @@
 "end": 50669,
 "kind": "code",
 "name": "loc_00C3DA",
-"symbolic": false
+"symbolic": false,
+"labels": 24,
+"named_labels": 0,
+"fields": 35,
+"named_fields": 0
 },
 {
 "start": 50670,
@@ -2303,7 +2939,11 @@
 "end": 52679,
 "kind": "code",
 "name": "loc_00CADE",
-"symbolic": false
+"symbolic": false,
+"labels": 29,
+"named_labels": 0,
+"fields": 64,
+"named_fields": 0
 },
 {
 "start": 52680,
@@ -2317,7 +2957,11 @@
 "end": 53303,
 "kind": "code",
 "name": "loc_00CE10",
-"symbolic": false
+"symbolic": false,
+"labels": 16,
+"named_labels": 0,
+"fields": 36,
+"named_fields": 0
 },
 {
 "start": 53304,
@@ -2338,14 +2982,22 @@
 "end": 55267,
 "kind": "code",
 "name": "sub_00D074",
-"symbolic": false
+"symbolic": false,
+"labels": 46,
+"named_labels": 0,
+"fields": 84,
+"named_fields": 0
 },
 {
 "start": 55268,
 "end": 55551,
 "kind": "code",
 "name": "sub_00D7E4",
-"symbolic": false
+"symbolic": false,
+"labels": 6,
+"named_labels": 0,
+"fields": 5,
+"named_fields": 0
 },
 {
 "start": 55552,
@@ -2380,7 +3032,11 @@
 "end": 56849,
 "kind": "code",
 "name": "sub_00DB88",
-"symbolic": false
+"symbolic": false,
+"labels": 19,
+"named_labels": 0,
+"fields": 21,
+"named_fields": 0
 },
 {
 "start": 56850,
@@ -2394,7 +3050,11 @@
 "end": 58863,
 "kind": "code",
 "name": "loc_00DE18",
-"symbolic": false
+"symbolic": false,
+"labels": 50,
+"named_labels": 0,
+"fields": 63,
+"named_fields": 0
 },
 {
 "start": 58864,
@@ -2429,7 +3089,11 @@
 "end": 61707,
 "kind": "code",
 "name": "sub_00E648",
-"symbolic": false
+"symbolic": false,
+"labels": 70,
+"named_labels": 0,
+"fields": 174,
+"named_fields": 0
 },
 {
 "start": 61708,
@@ -2471,7 +3135,11 @@
 "end": 63171,
 "kind": "code",
 "name": "sub_00F2F4",
-"symbolic": false
+"symbolic": false,
+"labels": 25,
+"named_labels": 0,
+"fields": 54,
+"named_fields": 0
 },
 {
 "start": 63172,
@@ -2590,7 +3258,11 @@
 "end": 65067,
 "kind": "code",
 "name": "loc_00FCBE",
-"symbolic": false
+"symbolic": false,
+"labels": 6,
+"named_labels": 0,
+"fields": 4,
+"named_fields": 0
 },
 {
 "start": 65068,
@@ -2611,7 +3283,11 @@
 "end": 65293,
 "kind": "code",
 "name": "code_00FF00",
-"symbolic": false
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 65294,
@@ -2632,7 +3308,11 @@
 "end": 66031,
 "kind": "code",
 "name": "sub_0101BE",
-"symbolic": false
+"symbolic": false,
+"labels": 1,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 66032,
@@ -2646,14 +3326,22 @@
 "end": 66101,
 "kind": "code",
 "name": "sub_010234",
-"symbolic": true
+"symbolic": true,
+"labels": 0,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 66102,
 "end": 66145,
 "kind": "code",
 "name": "sub_010236",
-"symbolic": false
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 66146,
@@ -2667,14 +3355,22 @@
 "end": 66215,
 "kind": "code",
 "name": "loc_0102A6",
-"symbolic": true
+"symbolic": true,
+"labels": 0,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 66216,
 "end": 67131,
 "kind": "code",
 "name": "sub_0102A8",
-"symbolic": false
+"symbolic": false,
+"labels": 21,
+"named_labels": 0,
+"fields": 30,
+"named_fields": 0
 },
 {
 "start": 67132,
@@ -2688,7 +3384,11 @@
 "end": 68023,
 "kind": "code",
 "name": "loc_010650",
-"symbolic": false
+"symbolic": false,
+"labels": 30,
+"named_labels": 0,
+"fields": 46,
+"named_fields": 0
 },
 {
 "start": 68024,
@@ -2716,7 +3416,11 @@
 "end": 70439,
 "kind": "code",
 "name": "sub_010FA8",
-"symbolic": false
+"symbolic": false,
+"labels": 20,
+"named_labels": 0,
+"fields": 25,
+"named_fields": 0
 },
 {
 "start": 70440,
@@ -2730,14 +3434,22 @@
 "end": 70807,
 "kind": "code",
 "name": "loc_0113B2",
-"symbolic": false
+"symbolic": false,
+"labels": 5,
+"named_labels": 0,
+"fields": 18,
+"named_fields": 0
 },
 {
 "start": 70808,
 "end": 71889,
 "kind": "code",
 "name": "sub_011498",
-"symbolic": false
+"symbolic": false,
+"labels": 25,
+"named_labels": 0,
+"fields": 38,
+"named_fields": 0
 },
 {
 "start": 71890,
@@ -2751,21 +3463,33 @@
 "end": 72207,
 "kind": "code",
 "name": "loc_0118EA",
-"symbolic": false
+"symbolic": false,
+"labels": 7,
+"named_labels": 0,
+"fields": 16,
+"named_fields": 0
 },
 {
 "start": 72208,
 "end": 74209,
 "kind": "code",
 "name": "sub_011A10",
-"symbolic": false
+"symbolic": false,
+"labels": 45,
+"named_labels": 0,
+"fields": 114,
+"named_fields": 0
 },
 {
 "start": 74210,
 "end": 76991,
 "kind": "code",
 "name": "sub_0121E2",
-"symbolic": false
+"symbolic": false,
+"labels": 75,
+"named_labels": 0,
+"fields": 133,
+"named_fields": 0
 },
 {
 "start": 76992,
@@ -2800,14 +3524,22 @@
 "end": 79827,
 "kind": "code",
 "name": "sub_012E3A",
-"symbolic": false
+"symbolic": false,
+"labels": 88,
+"named_labels": 0,
+"fields": 160,
+"named_fields": 0
 },
 {
 "start": 79828,
 "end": 81801,
 "kind": "code",
 "name": "sub_0137D4",
-"symbolic": false
+"symbolic": false,
+"labels": 49,
+"named_labels": 0,
+"fields": 79,
+"named_fields": 0
 },
 {
 "start": 81802,
@@ -2821,7 +3553,11 @@
 "end": 83159,
 "kind": "code",
 "name": "loc_013FC6",
-"symbolic": false
+"symbolic": false,
+"labels": 38,
+"named_labels": 0,
+"fields": 70,
+"named_fields": 0
 },
 {
 "start": 83160,
@@ -2842,7 +3578,11 @@
 "end": 83299,
 "kind": "code",
 "name": "sub_014522",
-"symbolic": true
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 2,
+"named_fields": 0
 },
 {
 "start": 83300,
@@ -2905,56 +3645,88 @@
 "end": 83945,
 "kind": "code",
 "name": "sub_0147A4",
-"symbolic": false
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 83946,
 "end": 83971,
 "kind": "code",
 "name": "sub_0147EA",
-"symbolic": false
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 83972,
 "end": 84449,
 "kind": "code",
 "name": "sub_014804",
-"symbolic": false
+"symbolic": false,
+"labels": 13,
+"named_labels": 0,
+"fields": 8,
+"named_fields": 0
 },
 {
 "start": 84450,
 "end": 84533,
 "kind": "code",
 "name": "sub_0149E2",
-"symbolic": false
+"symbolic": false,
+"labels": 2,
+"named_labels": 0,
+"fields": 1,
+"named_fields": 0
 },
 {
 "start": 84534,
 "end": 84845,
 "kind": "code",
 "name": "sub_014A36",
-"symbolic": false
+"symbolic": false,
+"labels": 9,
+"named_labels": 0,
+"fields": 12,
+"named_fields": 0
 },
 {
 "start": 84846,
 "end": 84925,
 "kind": "code",
 "name": "sub_014B6E",
-"symbolic": false
+"symbolic": false,
+"labels": 3,
+"named_labels": 0,
+"fields": 5,
+"named_fields": 0
 },
 {
 "start": 84926,
 "end": 84993,
 "kind": "code",
 "name": "sub_014BBE",
-"symbolic": false
+"symbolic": false,
+"labels": 3,
+"named_labels": 0,
+"fields": 4,
+"named_fields": 0
 },
 {
 "start": 84994,
 "end": 85103,
 "kind": "code",
 "name": "sub_014C02",
-"symbolic": false
+"symbolic": false,
+"labels": 3,
+"named_labels": 0,
+"fields": 3,
+"named_fields": 0
 },
 {
 "start": 85104,
@@ -2968,7 +3740,11 @@
 "end": 85161,
 "kind": "code",
 "name": "loc_014C7E",
-"symbolic": true
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 1,
+"named_fields": 0
 },
 {
 "start": 85162,
@@ -2982,42 +3758,66 @@
 "end": 85209,
 "kind": "code",
 "name": "loc_014CB6",
-"symbolic": false
+"symbolic": false,
+"labels": 1,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 85210,
 "end": 85427,
 "kind": "code",
 "name": "sub_014CDA",
-"symbolic": false
+"symbolic": false,
+"labels": 6,
+"named_labels": 0,
+"fields": 11,
+"named_fields": 0
 },
 {
 "start": 85428,
 "end": 85447,
 "kind": "code",
 "name": "sub_014DB4",
-"symbolic": true
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 1,
+"named_fields": 0
 },
 {
 "start": 85448,
 "end": 85875,
 "kind": "code",
 "name": "sub_014DC8",
-"symbolic": false
+"symbolic": false,
+"labels": 18,
+"named_labels": 0,
+"fields": 1,
+"named_fields": 0
 },
 {
 "start": 85876,
 "end": 85883,
 "kind": "code",
 "name": "sub_014F74",
-"symbolic": true
+"symbolic": true,
+"labels": 1,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 85884,
 "end": 85987,
 "kind": "code",
 "name": "sub_014F7C",
-"symbolic": false
+"symbolic": false,
+"labels": 2,
+"named_labels": 0,
+"fields": 8,
+"named_fields": 0
 },
 {
 "start": 85988,
@@ -3031,14 +3831,22 @@
 "end": 87291,
 "kind": "code",
 "name": "loc_01500C",
-"symbolic": false
+"symbolic": false,
+"labels": 36,
+"named_labels": 0,
+"fields": 55,
+"named_fields": 0
 },
 {
 "start": 87292,
 "end": 88303,
 "kind": "code",
 "name": "sub_0154FC",
-"symbolic": false
+"symbolic": false,
+"labels": 23,
+"named_labels": 0,
+"fields": 41,
+"named_fields": 0
 },
 {
 "start": 88304,
@@ -3052,7 +3860,11 @@
 "end": 89639,
 "kind": "code",
 "name": "loc_0159C6",
-"symbolic": false
+"symbolic": false,
+"labels": 47,
+"named_labels": 0,
+"fields": 41,
+"named_fields": 0
 },
 {
 "start": 89640,
@@ -3066,7 +3878,11 @@
 "end": 90829,
 "kind": "code",
 "name": "sub_015E74",
-"symbolic": false
+"symbolic": false,
+"labels": 39,
+"named_labels": 0,
+"fields": 106,
+"named_fields": 0
 },
 {
 "start": 90830,
@@ -3080,7 +3896,11 @@
 "end": 91941,
 "kind": "code",
 "name": "loc_0163D2",
-"symbolic": false
+"symbolic": false,
+"labels": 30,
+"named_labels": 0,
+"fields": 39,
+"named_fields": 0
 },
 {
 "start": 91942,
@@ -3094,7 +3914,11 @@
 "end": 92917,
 "kind": "code",
 "name": "sub_01674A",
-"symbolic": false
+"symbolic": false,
+"labels": 29,
+"named_labels": 0,
+"fields": 62,
+"named_fields": 0
 },
 {
 "start": 92918,
@@ -3108,7 +3932,11 @@
 "end": 94103,
 "kind": "code",
 "name": "loc_016B64",
-"symbolic": false
+"symbolic": false,
+"labels": 27,
+"named_labels": 0,
+"fields": 42,
+"named_fields": 0
 },
 {
 "start": 94104,
@@ -3122,7 +3950,11 @@
 "end": 94513,
 "kind": "code",
 "name": "loc_016FD2",
-"symbolic": false
+"symbolic": false,
+"labels": 7,
+"named_labels": 0,
+"fields": 7,
+"named_fields": 0
 },
 {
 "start": 94514,
@@ -3157,7 +3989,11 @@
 "end": 95797,
 "kind": "code",
 "name": "sub_0173CE",
-"symbolic": false
+"symbolic": false,
+"labels": 12,
+"named_labels": 0,
+"fields": 17,
+"named_fields": 0
 },
 {
 "start": 95798,
@@ -3171,7 +4007,11 @@
 "end": 97431,
 "kind": "code",
 "name": "loc_017682",
-"symbolic": false
+"symbolic": false,
+"labels": 44,
+"named_labels": 0,
+"fields": 78,
+"named_fields": 0
 },
 {
 "start": 97432,
@@ -3213,7 +4053,11 @@
 "end": 99413,
 "kind": "code",
 "name": "loc_018258",
-"symbolic": false
+"symbolic": false,
+"labels": 18,
+"named_labels": 0,
+"fields": 39,
+"named_fields": 0
 },
 {
 "start": 99414,
@@ -3234,21 +4078,33 @@
 "end": 101245,
 "kind": "code",
 "name": "loc_0185B2",
-"symbolic": false
+"symbolic": false,
+"labels": 46,
+"named_labels": 0,
+"fields": 65,
+"named_fields": 0
 },
 {
 "start": 101246,
 "end": 101465,
 "kind": "code",
 "name": "sub_018B7E",
-"symbolic": false
+"symbolic": false,
+"labels": 3,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 101466,
 "end": 102027,
 "kind": "code",
 "name": "sub_018C5A",
-"symbolic": false
+"symbolic": false,
+"labels": 14,
+"named_labels": 0,
+"fields": 27,
+"named_fields": 0
 },
 {
 "start": 102028,
@@ -3262,7 +4118,11 @@
 "end": 103859,
 "kind": "code",
 "name": "sub_019552",
-"symbolic": false
+"symbolic": false,
+"labels": 5,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 103860,
@@ -3276,49 +4136,77 @@
 "end": 104615,
 "kind": "code",
 "name": "sub_0195F8",
-"symbolic": false
+"symbolic": false,
+"labels": 22,
+"named_labels": 0,
+"fields": 6,
+"named_fields": 0
 },
 {
 "start": 104616,
 "end": 105533,
 "kind": "code",
 "name": "sub_0198A8",
-"symbolic": false
+"symbolic": false,
+"labels": 30,
+"named_labels": 0,
+"fields": 8,
+"named_fields": 0
 },
 {
 "start": 105534,
 "end": 105663,
 "kind": "code",
 "name": "sub_019C3E",
-"symbolic": false
+"symbolic": false,
+"labels": 5,
+"named_labels": 0,
+"fields": 2,
+"named_fields": 0
 },
 {
 "start": 105664,
 "end": 105793,
 "kind": "code",
 "name": "sub_019CC0",
-"symbolic": false
+"symbolic": false,
+"labels": 5,
+"named_labels": 0,
+"fields": 2,
+"named_fields": 0
 },
 {
 "start": 105794,
 "end": 106085,
 "kind": "code",
 "name": "sub_019D42",
-"symbolic": false
+"symbolic": false,
+"labels": 6,
+"named_labels": 0,
+"fields": 14,
+"named_fields": 0
 },
 {
 "start": 106086,
 "end": 106139,
 "kind": "code",
 "name": "sub_019E66",
-"symbolic": true
+"symbolic": true,
+"labels": 0,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 106140,
 "end": 106545,
 "kind": "code",
 "name": "sub_019E9C",
-"symbolic": false
+"symbolic": false,
+"labels": 8,
+"named_labels": 0,
+"fields": 2,
+"named_fields": 0
 },
 {
 "start": 106546,
@@ -3332,63 +4220,99 @@
 "end": 106857,
 "kind": "code",
 "name": "sub_01A03E",
-"symbolic": false
+"symbolic": false,
+"labels": 3,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 106858,
 "end": 107655,
 "kind": "code",
 "name": "sub_01A16A",
-"symbolic": false
+"symbolic": false,
+"labels": 22,
+"named_labels": 0,
+"fields": 18,
+"named_fields": 0
 },
 {
 "start": 107656,
 "end": 107737,
 "kind": "code",
 "name": "sub_01A488",
-"symbolic": false
+"symbolic": false,
+"labels": 2,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 107738,
 "end": 107831,
 "kind": "code",
 "name": "sub_01A4DA",
-"symbolic": false
+"symbolic": false,
+"labels": 3,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 107832,
 "end": 108447,
 "kind": "code",
 "name": "sub_01A538",
-"symbolic": false
+"symbolic": false,
+"labels": 13,
+"named_labels": 0,
+"fields": 14,
+"named_fields": 0
 },
 {
 "start": 108448,
 "end": 108627,
 "kind": "code",
 "name": "sub_01A7A0",
-"symbolic": false
+"symbolic": false,
+"labels": 7,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 108628,
 "end": 108831,
 "kind": "code",
 "name": "sub_01A854",
-"symbolic": false
+"symbolic": false,
+"labels": 5,
+"named_labels": 0,
+"fields": 1,
+"named_fields": 0
 },
 {
 "start": 108832,
 "end": 108985,
 "kind": "code",
 "name": "sub_01A920",
-"symbolic": false
+"symbolic": false,
+"labels": 7,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 108986,
 "end": 109243,
 "kind": "code",
 "name": "sub_01A9BA",
-"symbolic": false
+"symbolic": false,
+"labels": 12,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 109244,
@@ -3402,14 +4326,22 @@
 "end": 121753,
 "kind": "code",
 "name": "sub_01D960",
-"symbolic": false
+"symbolic": false,
+"labels": 4,
+"named_labels": 0,
+"fields": 1,
+"named_fields": 0
 },
 {
 "start": 121754,
 "end": 122213,
 "kind": "code",
 "name": "sub_01DB9A",
-"symbolic": false
+"symbolic": false,
+"labels": 3,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 122214,
@@ -3444,63 +4376,99 @@
 "end": 122293,
 "kind": "code",
 "name": "sub_01DD90",
-"symbolic": true
+"symbolic": false,
+"labels": 2,
+"named_labels": 0,
+"fields": 1,
+"named_fields": 0
 },
 {
 "start": 122294,
 "end": 122323,
 "kind": "code",
 "name": "sub_01DDB6",
-"symbolic": true
+"symbolic": false,
+"labels": 2,
+"named_labels": 0,
+"fields": 1,
+"named_fields": 0
 },
 {
 "start": 122324,
 "end": 122435,
 "kind": "code",
 "name": "sub_01DDD4",
-"symbolic": false
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 122436,
 "end": 122491,
 "kind": "code",
 "name": "sub_01DE44",
-"symbolic": false
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 122492,
 "end": 122779,
 "kind": "code",
 "name": "sub_01DE7C",
-"symbolic": false
+"symbolic": false,
+"labels": 5,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 122780,
 "end": 123275,
 "kind": "code",
 "name": "sub_01DF9C",
-"symbolic": false
+"symbolic": false,
+"labels": 3,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 123276,
 "end": 124893,
 "kind": "code",
 "name": "sub_01E18C",
-"symbolic": false
+"symbolic": false,
+"labels": 20,
+"named_labels": 0,
+"fields": 6,
+"named_fields": 0
 },
 {
 "start": 124894,
 "end": 125345,
 "kind": "code",
 "name": "sub_01E7DE",
-"symbolic": false
+"symbolic": false,
+"labels": 8,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 125346,
 "end": 126229,
 "kind": "code",
 "name": "sub_01E9A2",
-"symbolic": false
+"symbolic": false,
+"labels": 21,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 126230,
@@ -3514,7 +4482,11 @@
 "end": 126439,
 "kind": "code",
 "name": "sub_01ED1C",
-"symbolic": false
+"symbolic": false,
+"labels": 6,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 126440,
@@ -3528,42 +4500,66 @@
 "end": 127799,
 "kind": "code",
 "name": "loc_01EE08",
-"symbolic": false
+"symbolic": false,
+"labels": 30,
+"named_labels": 0,
+"fields": 5,
+"named_fields": 0
 },
 {
 "start": 127800,
 "end": 127951,
 "kind": "code",
 "name": "sub_01F338",
-"symbolic": false
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 127952,
 "end": 128063,
 "kind": "code",
 "name": "sub_01F3D0",
-"symbolic": false
+"symbolic": false,
+"labels": 4,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 128064,
 "end": 128423,
 "kind": "code",
 "name": "sub_01F440",
-"symbolic": false
+"symbolic": false,
+"labels": 3,
+"named_labels": 0,
+"fields": 5,
+"named_fields": 0
 },
 {
 "start": 128424,
 "end": 128535,
 "kind": "code",
 "name": "sub_01F5A8",
-"symbolic": false
+"symbolic": false,
+"labels": 4,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 128536,
 "end": 128985,
 "kind": "code",
 "name": "sub_01F618",
-"symbolic": false
+"symbolic": false,
+"labels": 3,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 128986,
@@ -3591,42 +4587,66 @@
 "end": 129401,
 "kind": "code",
 "name": "sub_01F800",
-"symbolic": false
+"symbolic": false,
+"labels": 12,
+"named_labels": 0,
+"fields": 1,
+"named_fields": 0
 },
 {
 "start": 129402,
 "end": 129587,
 "kind": "code",
 "name": "sub_01F97A",
-"symbolic": false
+"symbolic": false,
+"labels": 6,
+"named_labels": 0,
+"fields": 1,
+"named_fields": 0
 },
 {
 "start": 129588,
 "end": 130509,
 "kind": "code",
 "name": "sub_01FA34",
-"symbolic": false
+"symbolic": false,
+"labels": 18,
+"named_labels": 0,
+"fields": 5,
+"named_fields": 0
 },
 {
 "start": 130510,
 "end": 130529,
 "kind": "code",
 "name": "sub_01FDCE",
-"symbolic": true
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 2,
+"named_fields": 0
 },
 {
 "start": 130530,
 "end": 130561,
 "kind": "code",
 "name": "sub_01FDE2",
-"symbolic": true
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 4,
+"named_fields": 0
 },
 {
 "start": 130562,
 "end": 130829,
 "kind": "code",
 "name": "sub_01FE02",
-"symbolic": false
+"symbolic": false,
+"labels": 3,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 130830,
@@ -3640,14 +4660,22 @@
 "end": 131095,
 "kind": "code",
 "name": "sub_01FF1C",
-"symbolic": false
+"symbolic": false,
+"labels": 7,
+"named_labels": 0,
+"fields": 3,
+"named_fields": 0
 },
 {
 "start": 131096,
 "end": 131463,
 "kind": "code",
 "name": "sub_020018",
-"symbolic": false
+"symbolic": false,
+"labels": 7,
+"named_labels": 0,
+"fields": 5,
+"named_fields": 0
 },
 {
 "start": 131464,
@@ -3661,7 +4689,11 @@
 "end": 131875,
 "kind": "code",
 "name": "sub_020218",
-"symbolic": false
+"symbolic": false,
+"labels": 3,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 131876,
@@ -3675,14 +4707,22 @@
 "end": 132199,
 "kind": "code",
 "name": "sub_02032E",
-"symbolic": false
+"symbolic": false,
+"labels": 5,
+"named_labels": 0,
+"fields": 6,
+"named_fields": 0
 },
 {
 "start": 132200,
 "end": 132331,
 "kind": "code",
 "name": "sub_020468",
-"symbolic": false
+"symbolic": false,
+"labels": 4,
+"named_labels": 0,
+"fields": 1,
+"named_fields": 0
 },
 {
 "start": 132332,
@@ -3696,35 +4736,44 @@
 "end": 133041,
 "kind": "code",
 "name": "sub_02068E",
-"symbolic": false
+"symbolic": false,
+"labels": 7,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 133042,
 "end": 133465,
 "kind": "code",
 "name": "sub_0207B2",
-"symbolic": false
+"symbolic": false,
+"labels": 10,
+"named_labels": 0,
+"fields": 2,
+"named_fields": 0
 },
 {
 "start": 133466,
-"end": 133471,
-"kind": "code",
-"name": "sub_02095A",
-"symbolic": true
-},
-{
-"start": 133472,
 "end": 133547,
 "kind": "code",
-"name": "RegionCheck",
-"symbolic": false
+"name": "sub_02095A",
+"symbolic": false,
+"labels": 4,
+"named_labels": 1,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 133548,
 "end": 133703,
 "kind": "code",
 "name": "sub_0209AC",
-"symbolic": false
+"symbolic": false,
+"labels": 6,
+"named_labels": 0,
+"fields": 1,
+"named_fields": 0
 },
 {
 "start": 133704,
@@ -3738,21 +4787,33 @@
 "end": 140061,
 "kind": "code",
 "name": "sub_022028",
-"symbolic": false
+"symbolic": false,
+"labels": 7,
+"named_labels": 0,
+"fields": 3,
+"named_fields": 0
 },
 {
 "start": 140062,
 "end": 140087,
 "kind": "code",
 "name": "sub_02231E",
-"symbolic": false
+"symbolic": false,
+"labels": 1,
+"named_labels": 0,
+"fields": 1,
+"named_fields": 0
 },
 {
 "start": 140088,
 "end": 140111,
 "kind": "code",
 "name": "sub_022338",
-"symbolic": true
+"symbolic": false,
+"labels": 2,
+"named_labels": 0,
+"fields": 1,
+"named_fields": 0
 },
 {
 "start": 140112,
@@ -3766,7 +4827,11 @@
 "end": 141587,
 "kind": "code",
 "name": "sub_022468",
-"symbolic": false
+"symbolic": false,
+"labels": 30,
+"named_labels": 0,
+"fields": 2,
+"named_fields": 0
 },
 {
 "start": 141588,
@@ -3787,28 +4852,44 @@
 "end": 143519,
 "kind": "code",
 "name": "sub_022B44",
-"symbolic": false
+"symbolic": false,
+"labels": 25,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 143520,
 "end": 143769,
 "kind": "code",
 "name": "sub_0230A0",
-"symbolic": false
+"symbolic": false,
+"labels": 4,
+"named_labels": 0,
+"fields": 1,
+"named_fields": 0
 },
 {
 "start": 143770,
 "end": 143889,
 "kind": "code",
 "name": "sub_02319A",
-"symbolic": false
+"symbolic": false,
+"labels": 3,
+"named_labels": 0,
+"fields": 1,
+"named_fields": 0
 },
 {
 "start": 143890,
 "end": 144789,
 "kind": "code",
 "name": "sub_023212",
-"symbolic": false
+"symbolic": false,
+"labels": 21,
+"named_labels": 0,
+"fields": 6,
+"named_fields": 0
 },
 {
 "start": 144790,
@@ -3836,7 +4917,11 @@
 "end": 146911,
 "kind": "code",
 "name": "sub_023C2E",
-"symbolic": false
+"symbolic": false,
+"labels": 5,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 146912,
@@ -3913,119 +4998,187 @@
 "end": 147187,
 "kind": "code",
 "name": "sub_023E80",
-"symbolic": false
+"symbolic": false,
+"labels": 3,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 147188,
 "end": 147215,
 "kind": "code",
 "name": "sub_023EF4",
-"symbolic": true
+"symbolic": true,
+"labels": 1,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 147216,
 "end": 147723,
 "kind": "code",
 "name": "sub_023F10",
-"symbolic": false
+"symbolic": false,
+"labels": 6,
+"named_labels": 0,
+"fields": 1,
+"named_fields": 0
 },
 {
 "start": 147724,
 "end": 148829,
 "kind": "code",
 "name": "sub_02410C",
-"symbolic": false
+"symbolic": false,
+"labels": 23,
+"named_labels": 0,
+"fields": 3,
+"named_fields": 0
 },
 {
 "start": 148830,
 "end": 149299,
 "kind": "code",
 "name": "sub_02455E",
-"symbolic": false
+"symbolic": false,
+"labels": 13,
+"named_labels": 0,
+"fields": 1,
+"named_fields": 0
 },
 {
 "start": 149300,
 "end": 149369,
 "kind": "code",
 "name": "sub_024734",
-"symbolic": false
+"symbolic": false,
+"labels": 1,
+"named_labels": 0,
+"fields": 1,
+"named_fields": 0
 },
 {
 "start": 149370,
 "end": 149407,
 "kind": "code",
 "name": "sub_02477A",
-"symbolic": false
+"symbolic": false,
+"labels": 1,
+"named_labels": 0,
+"fields": 1,
+"named_fields": 0
 },
 {
 "start": 149408,
 "end": 149461,
 "kind": "code",
 "name": "sub_0247A0",
-"symbolic": false
+"symbolic": false,
+"labels": 1,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 149462,
 "end": 149485,
 "kind": "code",
 "name": "sub_0247D6",
-"symbolic": false
+"symbolic": false,
+"labels": 1,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 149486,
 "end": 149595,
 "kind": "code",
 "name": "sub_0247EE",
-"symbolic": false
+"symbolic": false,
+"labels": 1,
+"named_labels": 0,
+"fields": 5,
+"named_fields": 0
 },
 {
 "start": 149596,
 "end": 149635,
 "kind": "code",
 "name": "sub_02485C",
-"symbolic": false
+"symbolic": false,
+"labels": 3,
+"named_labels": 0,
+"fields": 1,
+"named_fields": 0
 },
 {
 "start": 149636,
 "end": 149691,
 "kind": "code",
 "name": "sub_024884",
-"symbolic": false
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 2,
+"named_fields": 0
 },
 {
 "start": 149692,
 "end": 149725,
 "kind": "code",
 "name": "sub_0248BC",
-"symbolic": false
+"symbolic": false,
+"labels": 3,
+"named_labels": 0,
+"fields": 1,
+"named_fields": 0
 },
 {
 "start": 149726,
 "end": 149801,
 "kind": "code",
 "name": "sub_0248DE",
-"symbolic": false
+"symbolic": false,
+"labels": 4,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 149802,
 "end": 149821,
 "kind": "code",
 "name": "sub_02492A",
-"symbolic": true
+"symbolic": true,
+"labels": 1,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 149822,
 "end": 149929,
 "kind": "code",
 "name": "sub_02493E",
-"symbolic": false
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 149930,
 "end": 150009,
 "kind": "code",
 "name": "sub_0249AA",
-"symbolic": false
+"symbolic": false,
+"labels": 3,
+"named_labels": 0,
+"fields": 7,
+"named_fields": 0
 },
 {
 "start": 150010,
@@ -4039,49 +5192,77 @@
 "end": 150449,
 "kind": "code",
 "name": "sub_024A1E",
-"symbolic": false
+"symbolic": false,
+"labels": 3,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 150450,
 "end": 150571,
 "kind": "code",
 "name": "sub_024BB2",
-"symbolic": false
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 150572,
 "end": 150841,
 "kind": "code",
 "name": "sub_024C2C",
-"symbolic": false
+"symbolic": false,
+"labels": 8,
+"named_labels": 0,
+"fields": 28,
+"named_fields": 0
 },
 {
 "start": 150842,
 "end": 151159,
 "kind": "code",
 "name": "sub_024D3A",
-"symbolic": false
+"symbolic": false,
+"labels": 16,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 151160,
 "end": 151199,
 "kind": "code",
 "name": "sub_024E78",
-"symbolic": false
+"symbolic": false,
+"labels": 3,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 151200,
 "end": 151337,
 "kind": "code",
 "name": "sub_024EA0",
-"symbolic": false
+"symbolic": false,
+"labels": 7,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 151338,
 "end": 151779,
 "kind": "code",
 "name": "sub_024F2A",
-"symbolic": true
+"symbolic": true,
+"labels": 40,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 151780,
@@ -4109,7 +5290,11 @@
 "end": 165985,
 "kind": "code",
 "name": "sub_0287EE",
-"symbolic": false
+"symbolic": false,
+"labels": 3,
+"named_labels": 0,
+"fields": 2,
+"named_fields": 0
 },
 {
 "start": 165986,
@@ -4123,56 +5308,88 @@
 "end": 166075,
 "kind": "code",
 "name": "sub_028884",
-"symbolic": false
+"symbolic": false,
+"labels": 1,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 166076,
 "end": 166263,
 "kind": "code",
 "name": "sub_0288BC",
-"symbolic": false
+"symbolic": false,
+"labels": 1,
+"named_labels": 0,
+"fields": 2,
+"named_fields": 0
 },
 {
 "start": 166264,
 "end": 166867,
 "kind": "code",
 "name": "sub_028978",
-"symbolic": false
+"symbolic": false,
+"labels": 15,
+"named_labels": 0,
+"fields": 57,
+"named_fields": 0
 },
 {
 "start": 166868,
 "end": 166975,
 "kind": "code",
 "name": "sub_028BD4",
-"symbolic": false
+"symbolic": false,
+"labels": 1,
+"named_labels": 0,
+"fields": 4,
+"named_fields": 0
 },
 {
 "start": 166976,
 "end": 167203,
 "kind": "code",
 "name": "sub_028C40",
-"symbolic": false
+"symbolic": false,
+"labels": 11,
+"named_labels": 0,
+"fields": 20,
+"named_fields": 0
 },
 {
 "start": 167204,
 "end": 167609,
 "kind": "code",
 "name": "sub_028D24",
-"symbolic": false
+"symbolic": false,
+"labels": 4,
+"named_labels": 0,
+"fields": 12,
+"named_fields": 0
 },
 {
 "start": 167610,
 "end": 168001,
 "kind": "code",
 "name": "sub_028EBA",
-"symbolic": true
+"symbolic": false,
+"labels": 6,
+"named_labels": 0,
+"fields": 24,
+"named_fields": 0
 },
 {
 "start": 168002,
 "end": 168139,
 "kind": "code",
 "name": "sub_029042",
-"symbolic": true
+"symbolic": false,
+"labels": 8,
+"named_labels": 0,
+"fields": 9,
+"named_fields": 0
 },
 {
 "start": 168140,
@@ -4186,28 +5403,44 @@
 "end": 168583,
 "kind": "code",
 "name": "loc_0290EC",
-"symbolic": false
+"symbolic": false,
+"labels": 26,
+"named_labels": 0,
+"fields": 37,
+"named_fields": 0
 },
 {
 "start": 168584,
 "end": 168819,
 "kind": "code",
 "name": "sub_029288",
-"symbolic": true
+"symbolic": false,
+"labels": 4,
+"named_labels": 0,
+"fields": 9,
+"named_fields": 0
 },
 {
 "start": 168820,
 "end": 169177,
 "kind": "code",
 "name": "sub_029374",
-"symbolic": false
+"symbolic": false,
+"labels": 15,
+"named_labels": 0,
+"fields": 29,
+"named_fields": 0
 },
 {
 "start": 169178,
 "end": 169277,
 "kind": "code",
 "name": "sub_0294DA",
-"symbolic": true
+"symbolic": false,
+"labels": 2,
+"named_labels": 0,
+"fields": 11,
+"named_fields": 0
 },
 {
 "start": 169278,
@@ -4235,7 +5468,11 @@
 "end": 264679,
 "kind": "code",
 "name": "sub_0408FA",
-"symbolic": false
+"symbolic": false,
+"labels": 1,
+"named_labels": 0,
+"fields": 5,
+"named_fields": 0
 },
 {
 "start": 264680,
@@ -4249,133 +5486,209 @@
 "end": 264979,
 "kind": "code",
 "name": "sub_040ABE",
-"symbolic": false
+"symbolic": false,
+"labels": 2,
+"named_labels": 0,
+"fields": 10,
+"named_fields": 0
 },
 {
 "start": 264980,
 "end": 265159,
 "kind": "code",
 "name": "sub_040B14",
-"symbolic": false
+"symbolic": false,
+"labels": 9,
+"named_labels": 0,
+"fields": 6,
+"named_fields": 0
 },
 {
 "start": 265160,
 "end": 265337,
 "kind": "code",
 "name": "sub_040BC8",
-"symbolic": false
+"symbolic": false,
+"labels": 8,
+"named_labels": 0,
+"fields": 10,
+"named_fields": 0
 },
 {
 "start": 265338,
 "end": 265379,
 "kind": "code",
 "name": "sub_040C7A",
-"symbolic": false
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 265380,
 "end": 265451,
 "kind": "code",
 "name": "sub_040CA4",
-"symbolic": false
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 3,
+"named_fields": 0
 },
 {
 "start": 265452,
 "end": 265535,
 "kind": "code",
 "name": "sub_040CEC",
-"symbolic": false
+"symbolic": false,
+"labels": 4,
+"named_labels": 0,
+"fields": 1,
+"named_fields": 0
 },
 {
 "start": 265536,
 "end": 265579,
 "kind": "code",
 "name": "sub_040D40",
-"symbolic": false
+"symbolic": false,
+"labels": 2,
+"named_labels": 0,
+"fields": 2,
+"named_fields": 0
 },
 {
 "start": 265580,
 "end": 265623,
 "kind": "code",
 "name": "sub_040D6C",
-"symbolic": false
+"symbolic": false,
+"labels": 2,
+"named_labels": 0,
+"fields": 2,
+"named_fields": 0
 },
 {
 "start": 265624,
 "end": 265807,
 "kind": "code",
 "name": "sub_040D98",
-"symbolic": false
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 265808,
 "end": 265983,
 "kind": "code",
 "name": "sub_040E50",
-"symbolic": false
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 265984,
 "end": 266797,
 "kind": "code",
 "name": "sub_040F00",
-"symbolic": false
+"symbolic": false,
+"labels": 22,
+"named_labels": 0,
+"fields": 30,
+"named_fields": 0
 },
 {
 "start": 266798,
 "end": 267225,
 "kind": "code",
 "name": "sub_04122E",
-"symbolic": false
+"symbolic": false,
+"labels": 7,
+"named_labels": 0,
+"fields": 8,
+"named_fields": 0
 },
 {
 "start": 267226,
 "end": 267625,
 "kind": "code",
 "name": "sub_0413DA",
-"symbolic": false
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 9,
+"named_fields": 0
 },
 {
 "start": 267626,
 "end": 268299,
 "kind": "code",
 "name": "sub_04156A",
-"symbolic": false
+"symbolic": false,
+"labels": 16,
+"named_labels": 0,
+"fields": 63,
+"named_fields": 0
 },
 {
 "start": 268300,
 "end": 268643,
 "kind": "code",
 "name": "sub_04180C",
-"symbolic": false
+"symbolic": false,
+"labels": 20,
+"named_labels": 0,
+"fields": 9,
+"named_fields": 0
 },
 {
 "start": 268644,
 "end": 269037,
 "kind": "code",
 "name": "sub_041964",
-"symbolic": false
+"symbolic": false,
+"labels": 20,
+"named_labels": 0,
+"fields": 8,
+"named_fields": 0
 },
 {
 "start": 269038,
 "end": 269165,
 "kind": "code",
 "name": "sub_041AEE",
-"symbolic": false
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 27,
+"named_fields": 0
 },
 {
 "start": 269166,
 "end": 269293,
 "kind": "code",
 "name": "sub_041B6E",
-"symbolic": false
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 27,
+"named_fields": 0
 },
 {
 "start": 269294,
 "end": 269325,
 "kind": "code",
 "name": "sub_041BEE",
-"symbolic": true
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 1,
+"named_fields": 0
 },
 {
 "start": 269326,
@@ -4389,7 +5702,11 @@
 "end": 269613,
 "kind": "code",
 "name": "sub_041D0E",
-"symbolic": true
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 1,
+"named_fields": 0
 },
 {
 "start": 269614,
@@ -4403,623 +5720,979 @@
 "end": 269875,
 "kind": "code",
 "name": "sub_041E2E",
-"symbolic": true
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 1,
+"named_fields": 0
 },
 {
 "start": 269876,
 "end": 269877,
 "kind": "code",
 "name": "sub_041E34",
-"symbolic": true
+"symbolic": true,
+"labels": 0,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 269878,
 "end": 269935,
 "kind": "code",
 "name": "sub_041E36",
-"symbolic": false
+"symbolic": false,
+"labels": 2,
+"named_labels": 0,
+"fields": 1,
+"named_fields": 0
 },
 {
 "start": 269936,
 "end": 269993,
 "kind": "code",
 "name": "sub_041E70",
-"symbolic": false
+"symbolic": false,
+"labels": 2,
+"named_labels": 0,
+"fields": 1,
+"named_fields": 0
 },
 {
 "start": 269994,
 "end": 270051,
 "kind": "code",
 "name": "sub_041EAA",
-"symbolic": false
+"symbolic": false,
+"labels": 2,
+"named_labels": 0,
+"fields": 1,
+"named_fields": 0
 },
 {
 "start": 270052,
 "end": 270109,
 "kind": "code",
 "name": "sub_041EE4",
-"symbolic": false
+"symbolic": false,
+"labels": 2,
+"named_labels": 0,
+"fields": 1,
+"named_fields": 0
 },
 {
 "start": 270110,
 "end": 270145,
 "kind": "code",
 "name": "sub_041F1E",
-"symbolic": false
+"symbolic": false,
+"labels": 2,
+"named_labels": 0,
+"fields": 2,
+"named_fields": 0
 },
 {
 "start": 270146,
 "end": 270181,
 "kind": "code",
 "name": "sub_041F42",
-"symbolic": false
+"symbolic": false,
+"labels": 2,
+"named_labels": 0,
+"fields": 2,
+"named_fields": 0
 },
 {
 "start": 270182,
 "end": 270217,
 "kind": "code",
 "name": "sub_041F66",
-"symbolic": false
+"symbolic": false,
+"labels": 2,
+"named_labels": 0,
+"fields": 2,
+"named_fields": 0
 },
 {
 "start": 270218,
 "end": 270253,
 "kind": "code",
 "name": "sub_041F8A",
-"symbolic": false
+"symbolic": false,
+"labels": 2,
+"named_labels": 0,
+"fields": 2,
+"named_fields": 0
 },
 {
 "start": 270254,
 "end": 270265,
 "kind": "code",
 "name": "sub_041FAE",
-"symbolic": true
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 1,
+"named_fields": 0
 },
 {
 "start": 270266,
 "end": 270277,
 "kind": "code",
 "name": "sub_041FBA",
-"symbolic": true
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 1,
+"named_fields": 0
 },
 {
 "start": 270278,
 "end": 270289,
 "kind": "code",
 "name": "sub_041FC6",
-"symbolic": true
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 1,
+"named_fields": 0
 },
 {
 "start": 270290,
 "end": 270301,
 "kind": "code",
 "name": "sub_041FD2",
-"symbolic": true
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 1,
+"named_fields": 0
 },
 {
 "start": 270302,
 "end": 270351,
 "kind": "code",
 "name": "sub_041FDE",
-"symbolic": false
+"symbolic": false,
+"labels": 2,
+"named_labels": 0,
+"fields": 2,
+"named_fields": 0
 },
 {
 "start": 270352,
 "end": 270401,
 "kind": "code",
 "name": "sub_042010",
-"symbolic": false
+"symbolic": false,
+"labels": 2,
+"named_labels": 0,
+"fields": 2,
+"named_fields": 0
 },
 {
 "start": 270402,
 "end": 270451,
 "kind": "code",
 "name": "sub_042042",
-"symbolic": false
+"symbolic": false,
+"labels": 2,
+"named_labels": 0,
+"fields": 2,
+"named_fields": 0
 },
 {
 "start": 270452,
 "end": 270501,
 "kind": "code",
 "name": "sub_042074",
-"symbolic": false
+"symbolic": false,
+"labels": 2,
+"named_labels": 0,
+"fields": 2,
+"named_fields": 0
 },
 {
 "start": 270502,
 "end": 270549,
 "kind": "code",
 "name": "sub_0420A6",
-"symbolic": false
+"symbolic": false,
+"labels": 1,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 270550,
 "end": 270597,
 "kind": "code",
 "name": "sub_0420D6",
-"symbolic": false
+"symbolic": false,
+"labels": 1,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 270598,
 "end": 270645,
 "kind": "code",
 "name": "sub_042106",
-"symbolic": false
+"symbolic": false,
+"labels": 1,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 270646,
 "end": 270693,
 "kind": "code",
 "name": "sub_042136",
-"symbolic": false
+"symbolic": false,
+"labels": 1,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 270694,
 "end": 270723,
 "kind": "code",
 "name": "sub_042166",
-"symbolic": false
+"symbolic": false,
+"labels": 1,
+"named_labels": 0,
+"fields": 1,
+"named_fields": 0
 },
 {
 "start": 270724,
 "end": 270753,
 "kind": "code",
 "name": "sub_042184",
-"symbolic": false
+"symbolic": false,
+"labels": 1,
+"named_labels": 0,
+"fields": 1,
+"named_fields": 0
 },
 {
 "start": 270754,
 "end": 270783,
 "kind": "code",
 "name": "sub_0421A2",
-"symbolic": false
+"symbolic": false,
+"labels": 1,
+"named_labels": 0,
+"fields": 1,
+"named_fields": 0
 },
 {
 "start": 270784,
 "end": 270815,
 "kind": "code",
 "name": "sub_0421C0",
-"symbolic": false
+"symbolic": false,
+"labels": 2,
+"named_labels": 0,
+"fields": 1,
+"named_fields": 0
 },
 {
 "start": 270816,
 "end": 270943,
 "kind": "code",
 "name": "sub_0421E0",
-"symbolic": false
+"symbolic": false,
+"labels": 5,
+"named_labels": 0,
+"fields": 5,
+"named_fields": 0
 },
 {
 "start": 270944,
 "end": 271059,
 "kind": "code",
 "name": "sub_042260",
-"symbolic": false
+"symbolic": false,
+"labels": 5,
+"named_labels": 0,
+"fields": 5,
+"named_fields": 0
 },
 {
 "start": 271060,
 "end": 271175,
 "kind": "code",
 "name": "sub_0422D4",
-"symbolic": false
+"symbolic": false,
+"labels": 5,
+"named_labels": 0,
+"fields": 5,
+"named_fields": 0
 },
 {
 "start": 271176,
 "end": 271303,
 "kind": "code",
 "name": "sub_042348",
-"symbolic": false
+"symbolic": false,
+"labels": 5,
+"named_labels": 0,
+"fields": 5,
+"named_fields": 0
 },
 {
 "start": 271304,
 "end": 271325,
 "kind": "code",
 "name": "sub_0423C8",
-"symbolic": false
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 271326,
 "end": 271347,
 "kind": "code",
 "name": "sub_0423DE",
-"symbolic": false
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 271348,
 "end": 271585,
 "kind": "code",
 "name": "sub_0423F4",
-"symbolic": false
+"symbolic": false,
+"labels": 6,
+"named_labels": 0,
+"fields": 3,
+"named_fields": 0
 },
 {
 "start": 271586,
 "end": 271819,
 "kind": "code",
 "name": "sub_0424E2",
-"symbolic": false
+"symbolic": false,
+"labels": 5,
+"named_labels": 0,
+"fields": 2,
+"named_fields": 0
 },
 {
 "start": 271820,
 "end": 271931,
 "kind": "code",
 "name": "sub_0425CC",
-"symbolic": false
+"symbolic": false,
+"labels": 2,
+"named_labels": 0,
+"fields": 1,
+"named_fields": 0
 },
 {
 "start": 271932,
 "end": 272045,
 "kind": "code",
 "name": "sub_04263C",
-"symbolic": false
+"symbolic": false,
+"labels": 2,
+"named_labels": 0,
+"fields": 1,
+"named_fields": 0
 },
 {
 "start": 272046,
 "end": 272275,
 "kind": "code",
 "name": "sub_0426AE",
-"symbolic": false
+"symbolic": false,
+"labels": 5,
+"named_labels": 0,
+"fields": 2,
+"named_fields": 0
 },
 {
 "start": 272276,
 "end": 272391,
 "kind": "code",
 "name": "sub_042794",
-"symbolic": false
+"symbolic": false,
+"labels": 2,
+"named_labels": 0,
+"fields": 1,
+"named_fields": 0
 },
 {
 "start": 272392,
 "end": 272533,
 "kind": "code",
 "name": "sub_042808",
-"symbolic": false
+"symbolic": false,
+"labels": 4,
+"named_labels": 0,
+"fields": 10,
+"named_fields": 0
 },
 {
 "start": 272534,
 "end": 272675,
 "kind": "code",
 "name": "sub_042896",
-"symbolic": false
+"symbolic": false,
+"labels": 4,
+"named_labels": 0,
+"fields": 10,
+"named_fields": 0
 },
 {
 "start": 272676,
 "end": 272817,
 "kind": "code",
 "name": "sub_042924",
-"symbolic": false
+"symbolic": false,
+"labels": 4,
+"named_labels": 0,
+"fields": 10,
+"named_fields": 0
 },
 {
 "start": 272818,
 "end": 273339,
 "kind": "code",
 "name": "sub_0429B2",
-"symbolic": false
+"symbolic": false,
+"labels": 20,
+"named_labels": 0,
+"fields": 18,
+"named_fields": 0
 },
 {
 "start": 273340,
 "end": 273379,
 "kind": "code",
 "name": "sub_042BBC",
-"symbolic": false
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 273380,
 "end": 273419,
 "kind": "code",
 "name": "sub_042BE4",
-"symbolic": false
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 273420,
 "end": 273457,
 "kind": "code",
 "name": "sub_042C0C",
-"symbolic": false
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 273458,
 "end": 273495,
 "kind": "code",
 "name": "sub_042C32",
-"symbolic": false
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 273496,
 "end": 273533,
 "kind": "code",
 "name": "sub_042C58",
-"symbolic": false
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 273534,
 "end": 273571,
 "kind": "code",
 "name": "sub_042C7E",
-"symbolic": false
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 273572,
 "end": 273611,
 "kind": "code",
 "name": "sub_042CA4",
-"symbolic": false
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 273612,
 "end": 273651,
 "kind": "code",
 "name": "sub_042CCC",
-"symbolic": false
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 273652,
 "end": 273693,
 "kind": "code",
 "name": "sub_042CF4",
-"symbolic": false
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 273694,
 "end": 273733,
 "kind": "code",
 "name": "sub_042D1E",
-"symbolic": false
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 273734,
 "end": 273773,
 "kind": "code",
 "name": "sub_042D46",
-"symbolic": false
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 273774,
 "end": 273815,
 "kind": "code",
 "name": "sub_042D6E",
-"symbolic": false
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 273816,
 "end": 273853,
 "kind": "code",
 "name": "sub_042D98",
-"symbolic": false
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 273854,
 "end": 273891,
 "kind": "code",
 "name": "sub_042DBE",
-"symbolic": false
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 273892,
 "end": 273929,
 "kind": "code",
 "name": "sub_042DE4",
-"symbolic": false
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 273930,
 "end": 273967,
 "kind": "code",
 "name": "sub_042E0A",
-"symbolic": false
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 273968,
 "end": 273975,
 "kind": "code",
 "name": "sub_042E30",
-"symbolic": true
+"symbolic": true,
+"labels": 0,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 273976,
 "end": 273983,
 "kind": "code",
 "name": "sub_042E38",
-"symbolic": true
+"symbolic": true,
+"labels": 0,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 273984,
 "end": 273991,
 "kind": "code",
 "name": "sub_042E40",
-"symbolic": true
+"symbolic": true,
+"labels": 0,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 273992,
 "end": 273999,
 "kind": "code",
 "name": "sub_042E48",
-"symbolic": true
+"symbolic": true,
+"labels": 0,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 274000,
 "end": 274007,
 "kind": "code",
 "name": "sub_042E50",
-"symbolic": true
+"symbolic": true,
+"labels": 0,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 274008,
 "end": 274015,
 "kind": "code",
 "name": "sub_042E58",
-"symbolic": true
+"symbolic": true,
+"labels": 0,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 274016,
 "end": 274023,
 "kind": "code",
 "name": "sub_042E60",
-"symbolic": true
+"symbolic": true,
+"labels": 0,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 274024,
 "end": 274031,
 "kind": "code",
 "name": "sub_042E68",
-"symbolic": true
+"symbolic": true,
+"labels": 0,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 274032,
 "end": 274045,
 "kind": "code",
 "name": "sub_042E70",
-"symbolic": true
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 2,
+"named_fields": 0
 },
 {
 "start": 274046,
 "end": 274059,
 "kind": "code",
 "name": "sub_042E7E",
-"symbolic": true
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 2,
+"named_fields": 0
 },
 {
 "start": 274060,
 "end": 274073,
 "kind": "code",
 "name": "sub_042E8C",
-"symbolic": true
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 2,
+"named_fields": 0
 },
 {
 "start": 274074,
 "end": 274087,
 "kind": "code",
 "name": "sub_042E9A",
-"symbolic": true
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 2,
+"named_fields": 0
 },
 {
 "start": 274088,
 "end": 274113,
 "kind": "code",
 "name": "sub_042EA8",
-"symbolic": false
+"symbolic": false,
+"labels": 1,
+"named_labels": 0,
+"fields": 2,
+"named_fields": 0
 },
 {
 "start": 274114,
 "end": 274139,
 "kind": "code",
 "name": "sub_042EC2",
-"symbolic": false
+"symbolic": false,
+"labels": 1,
+"named_labels": 0,
+"fields": 2,
+"named_fields": 0
 },
 {
 "start": 274140,
 "end": 274165,
 "kind": "code",
 "name": "sub_042EDC",
-"symbolic": false
+"symbolic": false,
+"labels": 1,
+"named_labels": 0,
+"fields": 2,
+"named_fields": 0
 },
 {
 "start": 274166,
 "end": 274191,
 "kind": "code",
 "name": "sub_042EF6",
-"symbolic": false
+"symbolic": false,
+"labels": 1,
+"named_labels": 0,
+"fields": 2,
+"named_fields": 0
 },
 {
 "start": 274192,
 "end": 274265,
 "kind": "code",
 "name": "sub_042F10",
-"symbolic": false
+"symbolic": false,
+"labels": 2,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 274266,
 "end": 274339,
 "kind": "code",
 "name": "sub_042F5A",
-"symbolic": false
+"symbolic": false,
+"labels": 2,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 274340,
 "end": 274413,
 "kind": "code",
 "name": "sub_042FA4",
-"symbolic": false
+"symbolic": false,
+"labels": 2,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 274414,
 "end": 274487,
 "kind": "code",
 "name": "sub_042FEE",
-"symbolic": false
+"symbolic": false,
+"labels": 2,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 274488,
 "end": 274501,
 "kind": "code",
 "name": "sub_043038",
-"symbolic": false
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 274502,
 "end": 274515,
 "kind": "code",
 "name": "sub_043046",
-"symbolic": false
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 274516,
 "end": 274529,
 "kind": "code",
 "name": "sub_043054",
-"symbolic": false
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 274530,
 "end": 274543,
 "kind": "code",
 "name": "sub_043062",
-"symbolic": false
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 274544,
 "end": 274557,
 "kind": "code",
 "name": "sub_043070",
-"symbolic": false
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 274558,
 "end": 274571,
 "kind": "code",
 "name": "sub_04307E",
-"symbolic": false
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 274572,
 "end": 274585,
 "kind": "code",
 "name": "sub_04308C",
-"symbolic": false
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 274586,
 "end": 274599,
 "kind": "code",
 "name": "sub_04309A",
-"symbolic": false
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 274600,
 "end": 274643,
 "kind": "code",
 "name": "sub_0430A8",
-"symbolic": false
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 1,
+"named_fields": 0
 },
 {
 "start": 274644,
 "end": 274687,
 "kind": "code",
 "name": "sub_0430D4",
-"symbolic": false
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 1,
+"named_fields": 0
 },
 {
 "start": 274688,
 "end": 274813,
 "kind": "code",
 "name": "sub_043100",
-"symbolic": false
+"symbolic": false,
+"labels": 6,
+"named_labels": 0,
+"fields": 2,
+"named_fields": 0
 },
 {
 "start": 274814,
@@ -5033,7 +6706,11 @@
 "end": 274877,
 "kind": "code",
 "name": "loc_043190",
-"symbolic": true
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 2,
+"named_fields": 0
 },
 {
 "start": 274878,
@@ -5047,14 +6724,22 @@
 "end": 275661,
 "kind": "code",
 "name": "sub_043442",
-"symbolic": false
+"symbolic": false,
+"labels": 5,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 275662,
 "end": 275751,
 "kind": "code",
 "name": "sub_0434CE",
-"symbolic": false
+"symbolic": false,
+"labels": 3,
+"named_labels": 0,
+"fields": 2,
+"named_fields": 0
 },
 {
 "start": 275752,
@@ -5089,35 +6774,55 @@
 "end": 486389,
 "kind": "code",
 "name": "sub_076BE2",
-"symbolic": true
+"symbolic": true,
+"labels": 1,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 486390,
 "end": 486399,
 "kind": "code",
 "name": "sub_076BF6",
-"symbolic": true
+"symbolic": true,
+"labels": 0,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 486400,
 "end": 486465,
 "kind": "code",
 "name": "sub_076C00",
-"symbolic": false
+"symbolic": false,
+"labels": 4,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 486466,
 "end": 486509,
 "kind": "code",
 "name": "sub_076C42",
-"symbolic": false
+"symbolic": false,
+"labels": 1,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 486510,
 "end": 486529,
 "kind": "code",
 "name": "sub_076C6E",
-"symbolic": true
+"symbolic": true,
+"labels": 1,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 486530,
@@ -5131,70 +6836,110 @@
 "end": 486607,
 "kind": "code",
 "name": "sub_076C8C",
-"symbolic": false
+"symbolic": true,
+"labels": 2,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 486608,
 "end": 486647,
 "kind": "code",
 "name": "sub_076CD0",
-"symbolic": false
+"symbolic": true,
+"labels": 1,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 486648,
 "end": 486719,
 "kind": "code",
 "name": "sub_076CF8",
-"symbolic": false
+"symbolic": false,
+"labels": 2,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 486720,
 "end": 486731,
 "kind": "code",
 "name": "sub_076D40",
-"symbolic": true
+"symbolic": true,
+"labels": 0,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 486732,
 "end": 486745,
 "kind": "code",
 "name": "sub_076D4C",
-"symbolic": true
+"symbolic": true,
+"labels": 0,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 486746,
 "end": 486761,
 "kind": "code",
 "name": "sub_076D5A",
-"symbolic": true
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 1,
+"named_fields": 0
 },
 {
 "start": 486762,
 "end": 486789,
 "kind": "code",
 "name": "sub_076D6A",
-"symbolic": true
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 1,
+"named_fields": 0
 },
 {
 "start": 486790,
 "end": 486853,
 "kind": "code",
 "name": "sub_076D86",
-"symbolic": true
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 4,
+"named_fields": 0
 },
 {
 "start": 486854,
 "end": 486875,
 "kind": "code",
 "name": "sub_076DC6",
-"symbolic": true
+"symbolic": false,
+"labels": 1,
+"named_labels": 0,
+"fields": 1,
+"named_fields": 0
 },
 {
 "start": 486876,
 "end": 486883,
 "kind": "code",
 "name": "sub_076DDC",
-"symbolic": true
+"symbolic": true,
+"labels": 0,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 486884,
@@ -5208,21 +6953,33 @@
 "end": 486913,
 "kind": "code",
 "name": "sub_076DF4",
-"symbolic": true
+"symbolic": true,
+"labels": 0,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 486914,
 "end": 486927,
 "kind": "code",
 "name": "sub_076E02",
-"symbolic": true
+"symbolic": true,
+"labels": 0,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 486928,
 "end": 486941,
 "kind": "code",
 "name": "sub_076E10",
-"symbolic": true
+"symbolic": true,
+"labels": 0,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 486942,
@@ -5236,7 +6993,11 @@
 "end": 487159,
 "kind": "code",
 "name": "sub_076ED2",
-"symbolic": true
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 3,
+"named_fields": 0
 },
 {
 "start": 487160,
@@ -5250,84 +7011,132 @@
 "end": 488487,
 "kind": "code",
 "name": "sub_076F2E",
-"symbolic": false
+"symbolic": false,
+"labels": 16,
+"named_labels": 0,
+"fields": 3,
+"named_fields": 0
 },
 {
 "start": 488488,
 "end": 488851,
 "kind": "code",
 "name": "sub_077428",
-"symbolic": false
+"symbolic": false,
+"labels": 13,
+"named_labels": 0,
+"fields": 1,
+"named_fields": 0
 },
 {
 "start": 488852,
 "end": 489001,
 "kind": "code",
 "name": "sub_077594",
-"symbolic": false
+"symbolic": false,
+"labels": 7,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 489002,
 "end": 489099,
 "kind": "code",
 "name": "sub_07762A",
-"symbolic": false
+"symbolic": false,
+"labels": 3,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 489100,
 "end": 489479,
 "kind": "code",
 "name": "sub_07768C",
-"symbolic": false
+"symbolic": false,
+"labels": 14,
+"named_labels": 0,
+"fields": 1,
+"named_fields": 0
 },
 {
 "start": 489480,
 "end": 489881,
 "kind": "code",
 "name": "sub_077808",
-"symbolic": false
+"symbolic": false,
+"labels": 17,
+"named_labels": 0,
+"fields": 3,
+"named_fields": 0
 },
 {
 "start": 489882,
 "end": 489999,
 "kind": "code",
 "name": "sub_07799A",
-"symbolic": false
+"symbolic": false,
+"labels": 2,
+"named_labels": 0,
+"fields": 1,
+"named_fields": 0
 },
 {
 "start": 490000,
 "end": 490241,
 "kind": "code",
 "name": "sub_077A10",
-"symbolic": false
+"symbolic": false,
+"labels": 9,
+"named_labels": 0,
+"fields": 5,
+"named_fields": 0
 },
 {
 "start": 490242,
 "end": 490611,
 "kind": "code",
 "name": "sub_077B02",
-"symbolic": false
+"symbolic": false,
+"labels": 21,
+"named_labels": 0,
+"fields": 5,
+"named_fields": 0
 },
 {
 "start": 490612,
 "end": 490711,
 "kind": "code",
 "name": "sub_077C74",
-"symbolic": false
+"symbolic": false,
+"labels": 4,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 490712,
 "end": 491495,
 "kind": "code",
 "name": "sub_077CD8",
-"symbolic": false
+"symbolic": false,
+"labels": 47,
+"named_labels": 0,
+"fields": 24,
+"named_fields": 0
 },
 {
 "start": 491496,
 "end": 491829,
 "kind": "code",
 "name": "sub_077FE8",
-"symbolic": false
+"symbolic": false,
+"labels": 23,
+"named_labels": 0,
+"fields": 11,
+"named_fields": 0
 },
 {
 "start": 491830,
@@ -5348,21 +7157,33 @@
 "end": 492277,
 "kind": "code",
 "name": "loc_078216",
-"symbolic": false
+"symbolic": false,
+"labels": 19,
+"named_labels": 0,
+"fields": 12,
+"named_fields": 0
 },
 {
 "start": 492278,
 "end": 492781,
 "kind": "code",
 "name": "sub_0782F6",
-"symbolic": false
+"symbolic": false,
+"labels": 18,
+"named_labels": 0,
+"fields": 7,
+"named_fields": 0
 },
 {
 "start": 492782,
 "end": 495709,
 "kind": "code",
 "name": "sub_0784EE",
-"symbolic": false
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 32,
+"named_fields": 0
 },
 {
 "start": 495710,
@@ -5404,14 +7225,22 @@
 "end": 499551,
 "kind": "code",
 "name": "sub_079EF6",
-"symbolic": false
+"symbolic": false,
+"labels": 6,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 499552,
 "end": 499821,
 "kind": "code",
 "name": "sub_079F60",
-"symbolic": false
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 499822,
@@ -5425,7 +7254,11 @@
 "end": 500223,
 "kind": "code",
 "name": "loc_07A142",
-"symbolic": false
+"symbolic": false,
+"labels": 6,
+"named_labels": 0,
+"fields": 3,
+"named_fields": 0
 },
 {
 "start": 500224,
@@ -5439,7 +7272,11 @@
 "end": 500335,
 "kind": "code",
 "name": "sub_07A250",
-"symbolic": false
+"symbolic": false,
+"labels": 2,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 500336,
@@ -5453,7 +7290,11 @@
 "end": 501137,
 "kind": "code",
 "name": "sub_07A34C",
-"symbolic": false
+"symbolic": false,
+"labels": 22,
+"named_labels": 0,
+"fields": 13,
+"named_fields": 0
 },
 {
 "start": 501138,
@@ -5467,14 +7308,22 @@
 "end": 501211,
 "kind": "code",
 "name": "loc_07A59C",
-"symbolic": false
+"symbolic": false,
+"labels": 2,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 501212,
 "end": 501455,
 "kind": "code",
 "name": "sub_07A5DC",
-"symbolic": false
+"symbolic": false,
+"labels": 8,
+"named_labels": 0,
+"fields": 6,
+"named_fields": 0
 },
 {
 "start": 501456,
@@ -5488,7 +7337,11 @@
 "end": 504079,
 "kind": "code",
 "name": "sub_07AB54",
-"symbolic": false
+"symbolic": false,
+"labels": 20,
+"named_labels": 0,
+"fields": 5,
+"named_fields": 0
 },
 {
 "start": 504080,
@@ -5502,35 +7355,55 @@
 "end": 504465,
 "kind": "code",
 "name": "sub_07B128",
-"symbolic": false
+"symbolic": false,
+"labels": 11,
+"named_labels": 0,
+"fields": 1,
+"named_fields": 0
 },
 {
 "start": 504466,
 "end": 504601,
 "kind": "code",
 "name": "sub_07B292",
-"symbolic": false
+"symbolic": false,
+"labels": 6,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 504602,
 "end": 504655,
 "kind": "code",
 "name": "sub_07B31A",
-"symbolic": false
+"symbolic": false,
+"labels": 3,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 504656,
 "end": 504727,
 "kind": "code",
 "name": "sub_07B350",
-"symbolic": false
+"symbolic": false,
+"labels": 1,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 504728,
 "end": 504947,
 "kind": "code",
 "name": "sub_07B398",
-"symbolic": false
+"symbolic": false,
+"labels": 9,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 504948,
@@ -5558,28 +7431,44 @@
 "end": 505691,
 "kind": "code",
 "name": "sub_07B694",
-"symbolic": false
+"symbolic": false,
+"labels": 10,
+"named_labels": 0,
+"fields": 9,
+"named_fields": 0
 },
 {
 "start": 505692,
 "end": 505793,
 "kind": "code",
 "name": "sub_07B75C",
-"symbolic": false
+"symbolic": false,
+"labels": 5,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 505794,
 "end": 506095,
 "kind": "code",
 "name": "sub_07B7C2",
-"symbolic": false
+"symbolic": false,
+"labels": 4,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 506096,
 "end": 506543,
 "kind": "code",
 "name": "sub_07B8F0",
-"symbolic": false
+"symbolic": false,
+"labels": 7,
+"named_labels": 0,
+"fields": 4,
+"named_fields": 0
 },
 {
 "start": 506544,
@@ -5607,42 +7496,66 @@
 "end": 508693,
 "kind": "code",
 "name": "sub_07C1F2",
-"symbolic": false
+"symbolic": false,
+"labels": 23,
+"named_labels": 0,
+"fields": 6,
+"named_fields": 0
 },
 {
 "start": 508694,
 "end": 508985,
 "kind": "code",
 "name": "sub_07C316",
-"symbolic": false
+"symbolic": false,
+"labels": 23,
+"named_labels": 0,
+"fields": 6,
+"named_fields": 0
 },
 {
 "start": 508986,
 "end": 509275,
 "kind": "code",
 "name": "sub_07C43A",
-"symbolic": false
+"symbolic": false,
+"labels": 15,
+"named_labels": 0,
+"fields": 3,
+"named_fields": 0
 },
 {
 "start": 509276,
 "end": 509385,
 "kind": "code",
 "name": "sub_07C55C",
-"symbolic": false
+"symbolic": false,
+"labels": 5,
+"named_labels": 0,
+"fields": 1,
+"named_fields": 0
 },
 {
 "start": 509386,
 "end": 510081,
 "kind": "code",
 "name": "sub_07C5CA",
-"symbolic": false
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 510082,
 "end": 511569,
 "kind": "code",
 "name": "sub_07C882",
-"symbolic": false
+"symbolic": false,
+"labels": 55,
+"named_labels": 0,
+"fields": 4,
+"named_fields": 0
 },
 {
 "start": 511570,
@@ -5656,14 +7569,22 @@
 "end": 512299,
 "kind": "code",
 "name": "sub_07CE84",
-"symbolic": false
+"symbolic": false,
+"labels": 10,
+"named_labels": 0,
+"fields": 7,
+"named_fields": 0
 },
 {
 "start": 512300,
 "end": 512403,
 "kind": "code",
 "name": "sub_07D12C",
-"symbolic": false
+"symbolic": false,
+"labels": 1,
+"named_labels": 0,
+"fields": 1,
+"named_fields": 0
 },
 {
 "start": 512404,
@@ -5684,7 +7605,11 @@
 "end": 512899,
 "kind": "code",
 "name": "sub_07D21C",
-"symbolic": false
+"symbolic": false,
+"labels": 8,
+"named_labels": 0,
+"fields": 1,
+"named_fields": 0
 },
 {
 "start": 512900,
@@ -5698,14 +7623,22 @@
 "end": 513199,
 "kind": "code",
 "name": "sub_07D460",
-"symbolic": false
+"symbolic": false,
+"labels": 0,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 513200,
 "end": 513855,
 "kind": "code",
 "name": "sub_07D4B0",
-"symbolic": false
+"symbolic": false,
+"labels": 15,
+"named_labels": 0,
+"fields": 15,
+"named_fields": 0
 },
 {
 "start": 513856,
@@ -5719,14 +7652,22 @@
 "end": 514157,
 "kind": "code",
 "name": "sub_07D80E",
-"symbolic": false
+"symbolic": false,
+"labels": 4,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 514158,
 "end": 514253,
 "kind": "code",
 "name": "sub_07D86E",
-"symbolic": false
+"symbolic": false,
+"labels": 4,
+"named_labels": 0,
+"fields": 0,
+"named_fields": 0
 },
 {
 "start": 514254,
