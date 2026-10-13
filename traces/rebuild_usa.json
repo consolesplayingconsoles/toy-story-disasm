@@ -168,7 +168,7 @@
 "end": 6063,
 "kind": "code",
 "name": "sub_001782",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 6064,
@@ -189,7 +189,7 @@
 "end": 6463,
 "kind": "code",
 "name": "sub_001912",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 6464,
@@ -280,7 +280,7 @@
 "end": 8973,
 "kind": "code",
 "name": "sub_0022E0",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 8974,
@@ -294,14 +294,14 @@
 "end": 9047,
 "kind": "code",
 "name": "sub_00233C",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 9048,
 "end": 9075,
 "kind": "code",
 "name": "sub_002358",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 9076,
@@ -315,7 +315,7 @@
 "end": 9105,
 "kind": "code",
 "name": "code_00238A",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 9106,
@@ -329,7 +329,7 @@
 "end": 9123,
 "kind": "code",
 "name": "code_00239C",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 9124,
@@ -406,7 +406,7 @@
 "end": 11101,
 "kind": "code",
 "name": "sub_002AEA",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 11102,
@@ -448,7 +448,7 @@
 "end": 12815,
 "kind": "code",
 "name": "sub_00317A",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 12816,
@@ -462,14 +462,14 @@
 "end": 13831,
 "kind": "code",
 "name": "sub_0035B0",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 13832,
 "end": 13919,
 "kind": "code",
 "name": "sub_003608",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 13920,
@@ -588,7 +588,7 @@
 "end": 19641,
 "kind": "code",
 "name": "sub_004CA0",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 19642,
@@ -609,7 +609,7 @@
 "end": 20047,
 "kind": "code",
 "name": "sub_004E42",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 20048,
@@ -665,7 +665,7 @@
 "end": 22721,
 "kind": "code",
 "name": "sub_005778",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 22722,
@@ -735,7 +735,7 @@
 "end": 24107,
 "kind": "code",
 "name": "sub_005D50",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 24108,
@@ -749,7 +749,7 @@
 "end": 24267,
 "kind": "code",
 "name": "sub_005E6A",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 24268,
@@ -777,7 +777,7 @@
 "end": 25543,
 "kind": "code",
 "name": "sub_0062EC",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 25544,
@@ -917,7 +917,7 @@
 "end": 28383,
 "kind": "code",
 "name": "sub_006E98",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 28384,
@@ -945,7 +945,7 @@
 "end": 29241,
 "kind": "code",
 "name": "loc_0071BE",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 29242,
@@ -1183,7 +1183,7 @@
 "end": 35451,
 "kind": "code",
 "name": "sub_008A2A",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 35452,
@@ -1477,7 +1477,7 @@
 "end": 39749,
 "kind": "code",
 "name": "sub_009B1A",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 39750,
@@ -1575,35 +1575,35 @@
 "end": 42667,
 "kind": "code",
 "name": "sub_00A66E",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 42668,
 "end": 42685,
 "kind": "code",
 "name": "sub_00A6AC",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 42686,
 "end": 42703,
 "kind": "code",
 "name": "sub_00A6BE",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 42704,
 "end": 42721,
 "kind": "code",
 "name": "sub_00A6D0",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 42722,
 "end": 42739,
 "kind": "code",
 "name": "sub_00A6E2",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 42740,
@@ -1631,7 +1631,7 @@
 "end": 42943,
 "kind": "code",
 "name": "sub_00A7B0",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 42944,
@@ -1715,7 +1715,7 @@
 "end": 43829,
 "kind": "code",
 "name": "sub_00AB1E",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 43830,
@@ -1750,7 +1750,7 @@
 "end": 44317,
 "kind": "code",
 "name": "sub_00ACD2",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 44318,
@@ -1764,7 +1764,7 @@
 "end": 44617,
 "kind": "code",
 "name": "sub_00ADEC",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 44618,
@@ -1778,21 +1778,21 @@
 "end": 44951,
 "kind": "code",
 "name": "sub_00AF46",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 44952,
 "end": 45157,
 "kind": "code",
 "name": "sub_00AF98",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 45158,
 "end": 45269,
 "kind": "code",
 "name": "sub_00B066",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 45270,
@@ -2653,7 +2653,7 @@
 "end": 66145,
 "kind": "code",
 "name": "sub_010236",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 66146,
@@ -2940,14 +2940,14 @@
 "end": 84925,
 "kind": "code",
 "name": "sub_014B6E",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 84926,
 "end": 84993,
 "kind": "code",
 "name": "sub_014BBE",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 84994,
@@ -3017,7 +3017,7 @@
 "end": 85987,
 "kind": "code",
 "name": "sub_014F7C",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 85988,
@@ -3353,7 +3353,7 @@
 "end": 107831,
 "kind": "code",
 "name": "sub_01A4DA",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 107832,
@@ -3381,7 +3381,7 @@
 "end": 108985,
 "kind": "code",
 "name": "sub_01A920",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 108986,
@@ -3542,7 +3542,7 @@
 "end": 128063,
 "kind": "code",
 "name": "sub_01F3D0",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 128064,
@@ -3556,7 +3556,7 @@
 "end": 128535,
 "kind": "code",
 "name": "sub_01F5A8",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 128536,
@@ -3682,7 +3682,7 @@
 "end": 132331,
 "kind": "code",
 "name": "sub_020468",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 132332,
@@ -3717,7 +3717,7 @@
 "end": 133547,
 "kind": "code",
 "name": "RegionCheck",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 133548,
@@ -3801,7 +3801,7 @@
 "end": 143889,
 "kind": "code",
 "name": "sub_02319A",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 143890,
@@ -3913,7 +3913,7 @@
 "end": 147187,
 "kind": "code",
 "name": "sub_023E80",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 147188,
@@ -3969,7 +3969,7 @@
 "end": 149485,
 "kind": "code",
 "name": "sub_0247D6",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 149486,
@@ -4018,14 +4018,14 @@
 "end": 149929,
 "kind": "code",
 "name": "sub_02493E",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 149930,
 "end": 150009,
 "kind": "code",
 "name": "sub_0249AA",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 150010,
@@ -4046,7 +4046,7 @@
 "end": 150571,
 "kind": "code",
 "name": "sub_024BB2",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 150572,
@@ -4123,7 +4123,7 @@
 "end": 166075,
 "kind": "code",
 "name": "sub_028884",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 166076,
@@ -4186,7 +4186,7 @@
 "end": 168583,
 "kind": "code",
 "name": "loc_0290EC",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 168584,
@@ -4235,7 +4235,7 @@
 "end": 264679,
 "kind": "code",
 "name": "sub_0408FA",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 264680,
@@ -4249,7 +4249,7 @@
 "end": 264979,
 "kind": "code",
 "name": "sub_040ABE",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 264980,
@@ -4270,7 +4270,7 @@
 "end": 265379,
 "kind": "code",
 "name": "sub_040C7A",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 265380,
@@ -4291,28 +4291,28 @@
 "end": 265579,
 "kind": "code",
 "name": "sub_040D40",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 265580,
 "end": 265623,
 "kind": "code",
 "name": "sub_040D6C",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 265624,
 "end": 265807,
 "kind": "code",
 "name": "sub_040D98",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 265808,
 "end": 265983,
 "kind": "code",
 "name": "sub_040E50",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 265984,
@@ -4326,7 +4326,7 @@
 "end": 267225,
 "kind": "code",
 "name": "sub_04122E",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 267226,
@@ -4361,14 +4361,14 @@
 "end": 269165,
 "kind": "code",
 "name": "sub_041AEE",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 269166,
 "end": 269293,
 "kind": "code",
 "name": "sub_041B6E",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 269294,
@@ -4417,28 +4417,28 @@
 "end": 269935,
 "kind": "code",
 "name": "sub_041E36",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 269936,
 "end": 269993,
 "kind": "code",
 "name": "sub_041E70",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 269994,
 "end": 270051,
 "kind": "code",
 "name": "sub_041EAA",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 270052,
 "end": 270109,
 "kind": "code",
 "name": "sub_041EE4",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 270110,
@@ -4557,28 +4557,28 @@
 "end": 270723,
 "kind": "code",
 "name": "sub_042166",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 270724,
 "end": 270753,
 "kind": "code",
 "name": "sub_042184",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 270754,
 "end": 270783,
 "kind": "code",
 "name": "sub_0421A2",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 270784,
 "end": 270815,
 "kind": "code",
 "name": "sub_0421C0",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 270816,
@@ -4592,14 +4592,14 @@
 "end": 271059,
 "kind": "code",
 "name": "sub_042260",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 271060,
 "end": 271175,
 "kind": "code",
 "name": "sub_0422D4",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 271176,
@@ -4669,21 +4669,21 @@
 "end": 272533,
 "kind": "code",
 "name": "sub_042808",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 272534,
 "end": 272675,
 "kind": "code",
 "name": "sub_042896",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 272676,
 "end": 272817,
 "kind": "code",
 "name": "sub_042924",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 272818,
@@ -4697,84 +4697,84 @@
 "end": 273379,
 "kind": "code",
 "name": "sub_042BBC",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 273380,
 "end": 273419,
 "kind": "code",
 "name": "sub_042BE4",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 273420,
 "end": 273457,
 "kind": "code",
 "name": "sub_042C0C",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 273458,
 "end": 273495,
 "kind": "code",
 "name": "sub_042C32",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 273496,
 "end": 273533,
 "kind": "code",
 "name": "sub_042C58",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 273534,
 "end": 273571,
 "kind": "code",
 "name": "sub_042C7E",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 273572,
 "end": 273611,
 "kind": "code",
 "name": "sub_042CA4",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 273612,
 "end": 273651,
 "kind": "code",
 "name": "sub_042CCC",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 273652,
 "end": 273693,
 "kind": "code",
 "name": "sub_042CF4",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 273694,
 "end": 273733,
 "kind": "code",
 "name": "sub_042D1E",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 273734,
 "end": 273773,
 "kind": "code",
 "name": "sub_042D46",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 273774,
 "end": 273815,
 "kind": "code",
 "name": "sub_042D6E",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 273816,
@@ -4788,7 +4788,7 @@
 "end": 273891,
 "kind": "code",
 "name": "sub_042DBE",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 273892,
@@ -4928,7 +4928,7 @@
 "end": 274339,
 "kind": "code",
 "name": "sub_042F5A",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 274340,
@@ -4949,56 +4949,56 @@
 "end": 274501,
 "kind": "code",
 "name": "sub_043038",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 274502,
 "end": 274515,
 "kind": "code",
 "name": "sub_043046",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 274516,
 "end": 274529,
 "kind": "code",
 "name": "sub_043054",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 274530,
 "end": 274543,
 "kind": "code",
 "name": "sub_043062",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 274544,
 "end": 274557,
 "kind": "code",
 "name": "sub_043070",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 274558,
 "end": 274571,
 "kind": "code",
 "name": "sub_04307E",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 274572,
 "end": 274585,
 "kind": "code",
 "name": "sub_04308C",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 274586,
 "end": 274599,
 "kind": "code",
 "name": "sub_04309A",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 274600,
@@ -5019,7 +5019,7 @@
 "end": 274813,
 "kind": "code",
 "name": "sub_043100",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 274814,
@@ -5047,7 +5047,7 @@
 "end": 275661,
 "kind": "code",
 "name": "sub_043442",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 275662,
@@ -5320,7 +5320,7 @@
 "end": 491495,
 "kind": "code",
 "name": "sub_077CD8",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 491496,
@@ -5362,7 +5362,7 @@
 "end": 495709,
 "kind": "code",
 "name": "sub_0784EE",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 495710,
@@ -5404,7 +5404,7 @@
 "end": 499551,
 "kind": "code",
 "name": "sub_079EF6",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 499552,
@@ -5439,7 +5439,7 @@
 "end": 500335,
 "kind": "code",
 "name": "sub_07A250",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 500336,
@@ -5516,7 +5516,7 @@
 "end": 504655,
 "kind": "code",
 "name": "sub_07B31A",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 504656,
@@ -5635,7 +5635,7 @@
 "end": 510081,
 "kind": "code",
 "name": "sub_07C5CA",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 510082,
@@ -5698,7 +5698,7 @@
 "end": 513199,
 "kind": "code",
 "name": "sub_07D460",
-"symbolic": true
+"symbolic": false
 },
 {
 "start": 513200,
@@ -6227,51 +6227,30 @@
 },
 {
 "start": 534404,
-"end": 550405,
+"end": 536003,
 "kind": "data",
-"name": "PlayerFrameBank",
+"name": "woody_frame_table",
+"format": "frame_offsets"
+},
+{
+"start": 536004,
+"end": 536347,
+"kind": "data",
+"name": "data_082DC4",
 "format": "raw"
 },
 {
-"start": 550406,
-"end": 550413,
-"kind": "code",
-"name": "code_086606",
-"symbolic": false
-},
-{
-"start": 550414,
-"end": 812617,
+"start": 536348,
+"end": 936485,
 "kind": "data",
-"name": "data_08660E",
-"format": "raw"
+"name": "woody_frames",
+"format": "frames_rle"
 },
 {
-"start": 812618,
-"end": 812647,
-"kind": "code",
-"name": "code_0C664A",
-"symbolic": false
-},
-{
-"start": 812648,
-"end": 812667,
-"kind": "data",
-"name": "data_0C6668",
-"format": "raw"
-},
-{
-"start": 812668,
-"end": 812681,
-"kind": "code",
-"name": "code_0C667C",
-"symbolic": false
-},
-{
-"start": 812682,
+"start": 936486,
 "end": 1018317,
 "kind": "data",
-"name": "data_0C668A",
+"name": "data_0E4A26",
 "format": "raw"
 },
 {
@@ -6521,10 +6500,17 @@
 },
 {
 "start": 2005224,
-"end": 2022747,
+"end": 2005363,
 "kind": "data",
 "name": "off_1E98E8",
 "format": "raw"
+},
+{
+"start": 2005364,
+"end": 2022747,
+"kind": "data",
+"name": "buzz_arm_raised_frames",
+"format": "frames"
 },
 {
 "start": 2022748,
@@ -6535,10 +6521,59 @@
 },
 {
 "start": 2022784,
-"end": 2120739,
+"end": 2023035,
 "kind": "data",
 "name": "off_1EDD80",
 "format": "raw"
+},
+{
+"start": 2023036,
+"end": 2093779,
+"kind": "data",
+"name": "buzz_falling_frames",
+"format": "frames"
+},
+{
+"start": 2093780,
+"end": 2095471,
+"kind": "data",
+"name": "buzz_front_frame",
+"format": "frames"
+},
+{
+"start": 2095472,
+"end": 2097003,
+"kind": "data",
+"name": "buzz_stand_frame",
+"format": "frames"
+},
+{
+"start": 2097004,
+"end": 2098491,
+"kind": "data",
+"name": "buzz_stride_frame",
+"format": "frames"
+},
+{
+"start": 2098492,
+"end": 2101709,
+"kind": "data",
+"name": "buzz_lunge_frames",
+"format": "frames"
+},
+{
+"start": 2101710,
+"end": 2103631,
+"kind": "data",
+"name": "buzz_wings_out_frame",
+"format": "frames"
+},
+{
+"start": 2103632,
+"end": 2120739,
+"kind": "data",
+"name": "buzz_carrying_tyre_frames",
+"format": "frames"
 },
 {
 "start": 2120740,

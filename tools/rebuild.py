@@ -12,8 +12,8 @@ Writes, under <out dir> (keep it in build/: it holds the game):
   data/<name>.bin  the bytes between code, split at every label and every block boundary
   rom.bin          what AS builds from main.asm, compared against the ROM
 
-Code comes from the trace: "code_ranges" ([start, end) pairs) if it has them, else its "starts"
-(every instruction start). Each instruction is written in AS syntax with its ROM operands as labels.
+Code comes from the trace: its "starts" (every instruction it decoded, exactly those) if it has
+them, else "code_ranges" ([start, end) pairs, decoded linearly). Each instruction is written in AS syntax with its ROM operands as labels.
 Every instruction is checked on its own first (one AS run, each in its own slot under
 `phase <address>`); one that does not assemble to its own bytes is written as `dc.w` with the
 instruction in a comment, and its routine is not symbolic. Then the whole ROM is assembled and
@@ -27,6 +27,8 @@ The facts module is where the work happens (the output is regenerated, never edi
             a table): the immediate becomes a label. An immediate in the ROM's range that is not
             listed here, nor a reference the trace recorded, leaves its routine not symbolic
   NOT_CODE  (start, end inclusive) ranges the trace took for code that are data: they become data
+  PTR_TABLES  (start, end inclusive, name) tables of absolute longs pointing into the ROM: written
+            as `dc.l <label>`, so they follow what they point at (the block's format is "pointers")
 The record (--record) holds addresses, names and formats only, no game bytes: track it. progress.py
 reads it for the main metric.
 
@@ -41,13 +43,14 @@ ap.add_argument('rom'); ap.add_argument('trace'); ap.add_argument('out')
 ap.add_argument('--as', dest='asdir', required=True)
 ap.add_argument('--facts'); ap.add_argument('--names', default='NAMES'); ap.add_argument('--blocks', default='BLOCKS')
 ap.add_argument('--pointers', default='POINTERS'); ap.add_argument('--not-code', dest='not_code', default='NOT_CODE')
+ap.add_argument('--ptr-tables', dest='ptr_tables', default='PTR_TABLES')
 ap.add_argument('--record')
 a = ap.parse_args()
 
 ROM = open(a.rom, 'rb').read()
 SIZE = len(ROM)
 tr = json.load(open(a.trace))
-NAMES, BLOCKS, POINTERS, NOT_CODE = {}, [], set(), []
+NAMES, BLOCKS, POINTERS, NOT_CODE, PTR_TABLES = {}, [], set(), [], []
 if a.facts:
     sys.path.insert(0, os.path.dirname(os.path.abspath(a.facts)))
     spec = importlib.util.spec_from_file_location('facts', a.facts)
@@ -57,57 +60,59 @@ if a.facts:
     BLOCKS = list(getattr(facts, a.blocks, []))
     POINTERS = set(getattr(facts, a.pointers, ()))
     NOT_CODE = list(getattr(facts, a.not_code, []))
+    PTR_TABLES = list(getattr(facts, a.ptr_tables, []))
+for _ts, _te, _tn in PTR_TABLES:
+    NAMES.setdefault(_ts, _tn)               # a pointer table is a label of its own
+# A block or a pointer table was checked whole as data: it wins over whatever the trace decoded there.
+NOT_CODE = NOT_CODE + [(b[0], b[1]) for b in BLOCKS] + [(t[0], t[1]) for t in PTR_TABLES]
 
 md = cs.Cs(cs.CS_ARCH_M68K, cs.CS_MODE_M68K_000 + cs.CS_MODE_BIG_ENDIAN)
 
 # ---- code: every instruction, from the trace --------------------------------------------------
-if 'code_ranges' in tr:
-    ranges = [(s, e) for s, e in tr['code_ranges']]
-else:
-    starts = sorted(set(tr['starts']))
-    ranges = []
-    for s in starts:
-        i = next(md.disasm(ROM[s:s + 10], s, 1), None)
-        e = s + (i.size if i else 2)
-        if ranges and s <= ranges[-1][1]:
-            ranges[-1] = (ranges[-1][0], max(ranges[-1][1], e))
-        else:
-            ranges.append((s, e))
-cut = []                                     # the code ranges minus NOT_CODE
-for s, e in ranges:
-    pieces = [(s, e)]
-    for ns, ne in NOT_CODE:
-        nxt = []
-        for ps, pe in pieces:
-            if ne + 1 <= ps or ns >= pe:
-                nxt.append((ps, pe))
-                continue
-            if ps < ns:
-                nxt.append((ps, ns))
-            if ne + 1 < pe:
-                nxt.append((ne + 1, pe))
-        pieces = nxt
-    cut += pieces
-ranges = sorted(cut)
-merged = []
-for s, e in ranges:
-    if merged and s <= merged[-1][1]:
-        merged[-1] = (merged[-1][0], max(merged[-1][1], e))
-    else:
-        merged.append((s, e))
-
 insns = {}                                   # address -> (size, mnemonic, op_str) or (size, None, None)
-for s, e in merged:
-    p = s
-    while p < e:
-        i = next(md.disasm(ROM[p:e], p, 1), None)
-        if i is None or p + i.size > e:
-            n = 2 if e - p >= 2 else 1
-            insns[p] = (n, None, None)
-            p += n
-        else:
-            insns[p] = (i.size, i.mnemonic, i.op_str)
-            p += i.size
+
+
+def outside_not_code(p, n):
+    return not any(ns <= q <= ne for ns, ne in NOT_CODE for q in (p, p + n - 1))
+
+
+if 'starts' in tr:
+    # Exactly the instructions the trace decoded: bytes between them are data, never swept.
+    taken_end = 0
+    for p in sorted(set(tr['starts'])):
+        i = next(md.disasm(ROM[p:p + 10], p, 1), None)
+        if i is None or not outside_not_code(p, i.size) or p < taken_end:
+            continue                         # undecodable, declared data, or inside the last one
+        insns[p] = (i.size, i.mnemonic, i.op_str)
+        taken_end = p + i.size
+else:
+    # Ranges ([start, end) pairs) of code: decoded linearly from each range's start.
+    cut = []                                 # the code ranges minus NOT_CODE
+    for s, e in tr['code_ranges']:
+        pieces = [(s, e)]
+        for ns, ne in NOT_CODE:
+            nxt = []
+            for ps, pe in pieces:
+                if ne + 1 <= ps or ns >= pe:
+                    nxt.append((ps, pe))
+                    continue
+                if ps < ns:
+                    nxt.append((ps, ns))
+                if ne + 1 < pe:
+                    nxt.append((ne + 1, pe))
+            pieces = nxt
+        cut += pieces
+    for s, e in sorted(cut):
+        p = s
+        while p < e:
+            i = next(md.disasm(ROM[p:e], p, 1), None)
+            if i is None or p + i.size > e:
+                n = 2 if e - p >= 2 else 1
+                insns[p] = (n, None, None)
+                p += n
+            else:
+                insns[p] = (i.size, i.mnemonic, i.op_str)
+                p += i.size
 
 labels_kind = {int(k, 16): v for k, v in tr.get('labels', {}).items()}
 drefs = {}                                   # instruction address -> ROM targets it references
@@ -153,6 +158,10 @@ for p in NAMES:
         targets.add(p)
 for b in BLOCKS:
     targets.add(b[0])
+for ts, te, tn in PTR_TABLES:
+    targets.add(ts)
+    for q in range(ts, te + 1, 4):
+        targets.add(int.from_bytes(ROM[q:q + 4], 'big'))
 targets = {t for t in targets if rom_target(t)}
 
 # A label can only sit on an instruction start or in data; one inside an instruction stays a number.
@@ -162,6 +171,9 @@ for p, (n, m, ops) in insns.items():
         inside.add(q)
 labelable = {t for t in targets if t not in inside}
 data_label = {t for t in labelable if t not in insns}
+# A label inside a pointer table but not on an entry: written as table+offset, not a cut.
+inner = {t: pt for t in data_label for pt in PTR_TABLES if pt[0] < t <= pt[1] and (t - pt[0]) % 4}
+data_label -= set(inner)
 
 AUTO = {'sub': 'sub', 'loc': 'loc', 'jt': 'jt', 'mode': 'mode', 'table': 'tbl', 'ptrtable': 'ptr', 'bad': 'bad'}
 
@@ -176,8 +188,35 @@ def name_of(t):
 
 
 # ---- one instruction, in AS syntax -------------------------------------------------------------
+# RAM and hardware operands are names too: a routine is symbolic only when every absolute operand is.
+RAM_NAMES = {a & 0xFFFFFF: n for a, n in NAMES.items() if (a & 0xFFFFFF) >= 0xFF0000}
+HW = {0xA00000: 'Z80_RAM', 0xA04000: 'YM2612_A0', 0xA04001: 'YM2612_D0', 0xA04002: 'YM2612_A1',
+      0xA04003: 'YM2612_D1', 0xA10000: 'IO_VERSION', 0xA10002: 'IO_DATA1', 0xA10004: 'IO_DATA2',
+      0xA10006: 'IO_DATA3', 0xA10008: 'IO_CTRL1', 0xA1000A: 'IO_CTRL2', 0xA1000C: 'IO_CTRL3',
+      0xA11100: 'Z80_BUSREQ', 0xA11200: 'Z80_RESET', 0xA14000: 'TMSS', 0xC00000: 'VDP_DATA',
+      0xC00004: 'VDP_CTRL', 0xC00008: 'VDP_HV', 0xC00011: 'PSG'}
+EQUS = {}                                    # name -> value, for RAM and hardware names used
+
+
+def ram_or_hw(full, size):
+    """The operand as a name (or name+offset), or None."""
+    a24 = full & 0xFFFFFF
+    if a24 >= 0xFF0000:
+        n = RAM_NAMES.get(a24)
+        if n is None:
+            return None
+        EQUS[n] = 0xFF000000 | a24           # sign-extended, so .w and $FFFFxxxx.l both encode
+        return n if size == 'w' or full >> 24 == 0xFF else '%s&$FFFFFF' % n
+    base = max((h for h in HW if h <= full < h + 2), default=None)
+    if base is None:
+        return None
+    EQUS[HW[base]] = base
+    return HW[base] + ('+%d' % (full - base) if full > base else '')
+
+
 def render(p, m, ops):
-    """(text, symbolic): the instruction with its ROM operands as labels where it can."""
+    """(text, symbolic): the instruction with its ROM, RAM and hardware operands as names where it
+    can; symbolic only when every one of them is."""
     sym = [True]
 
     def lab(v):
@@ -191,10 +230,15 @@ def render(p, m, ops):
     o = PCREL.sub(lambda x: lab(int(x.group(2), 16) * (-1 if x.group(1) else 1)) + '(pc', ops)
 
     def absr(x):
-        v = int(x.group(1), 16)
-        if x.group(2) == 'w' and v >= 0x8000:
-            return '($%X).w' % (v | 0xFFFF0000)    # a short address sign-extends: RAM
-        return '(%s).%s' % (lab(v) if rom_target(v) else '$%X' % v, x.group(2))
+        v, size = int(x.group(1), 16), x.group(2)
+        full = v | 0xFFFF0000 if size == 'w' and v >= 0x8000 else v    # a short address sign-extends
+        if rom_target(full):
+            return '(%s).%s' % (lab(full), size)
+        n = ram_or_hw(full, size)
+        if n is None:
+            sym[0] = False                   # RAM or hardware nobody has named yet
+            return '($%X).%s' % (full, size)
+        return '(%s).%s' % (n, size)
     o = ABS.sub(absr, o)
     if m == 'moveq':                         # its immediate is a signed byte
         o = re.sub(r'#\$([0-9a-f]+)', lambda x: '#%d' % (int(x.group(1), 16) - (256 if int(x.group(1), 16) > 127 else 0)), o)
@@ -253,6 +297,7 @@ SLOT = 16
 while True:
     lines, line_of = HEAD.rstrip('\n').split('\n'), {}
     lines += ['%s equ $%X' % (name_of(t), t) for t in sorted(labelable)]
+    lines += ['%s equ $%X' % (n, v) for n, v in sorted(EQUS.items())]
     live = [p for p in order if p not in fallback]
     for k, p in enumerate(live):
         lines += ['\torg $%X' % (k * SLOT), '\tphase $%X' % p, rendered[p][0], '\tdephase']
@@ -275,7 +320,8 @@ while True:
     break
 
 # ---- pass 2: the whole ROM ----------------------------------------------------------------------
-cuts = set(data_label) | {b[0] for b in BLOCKS} | {b[1] + 1 for b in BLOCKS}
+cuts = set(data_label) | {b[0] for b in BLOCKS} | {b[1] + 1 for b in BLOCKS} \
+    | {t[0] for t in PTR_TABLES} | {t[1] + 1 for t in PTR_TABLES}
 block_of = {}
 for b in BLOCKS:
     block_of[b[0]] = b
@@ -297,7 +343,7 @@ while p < SIZE:
         segments.append((s, p, 'data'))
 
 routine_starts = sorted(t for t in labelable if t in insns and (labels_kind.get(t) == 'sub' or t in NAMES))
-main = [HEAD, '\torg 0']
+main = [HEAD] + ['%s equ $%X' % (n, v) for n, v in sorted(EQUS.items())] + ['\torg 0']
 blocks = []
 cur = None                                   # the routine being written: [start, name, lines, symbolic]
 
@@ -315,8 +361,21 @@ rs = set(routine_starts)
 for s, e, kind in segments:
     if kind == 'data':
         flush()
-        b = block_of.get(s)
-        nm = b[2] if b else (name_of(s) if s in labelable else 'data_%06X' % s)
+        pt = next((t for t in PTR_TABLES if t[0] <= s <= t[1]), None)
+        if pt and (s - pt[0]) % 4 == 0 and (e - s) % 4 == 0 and e <= pt[1] + 1:
+            vals = [int.from_bytes(ROM[q:q + 4], 'big') for q in range(s, e, 4)]
+            if all(v in labelable for v in vals):
+                if s in labelable:
+                    main.append('%s:' % name_of(s))
+                for k in range(0, len(vals), 4):
+                    main.append('\tdc.l\t' + ', '.join(name_of(v) for v in vals[k:k + 4]))
+                for t, tpt in sorted(inner.items()):
+                    if s <= t < e:
+                        main.append('%s equ %s+$%X' % (name_of(t), name_of(s), t - s))
+                blocks.append({'start': s, 'end': e - 1, 'kind': 'data', 'name': pt[2], 'format': 'pointers'})
+                continue
+        b = next((x for x in BLOCKS if x[0] <= s <= x[1]), None)   # a label inside a block splits it:
+        nm = b[2] if b else (name_of(s) if s in labelable else 'data_%06X' % s)   # each piece keeps its name
         fmt = b[3] if b else 'raw'
         fn = '%s_%06X.bin' % (re.sub(r'[^\w]', '_', nm), s)
         open(os.path.join(a.out, 'data', fn), 'wb').write(ROM[s:e])

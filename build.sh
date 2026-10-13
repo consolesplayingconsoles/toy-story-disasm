@@ -11,6 +11,6 @@ cd "$(dirname "$0")"
 [ -f build/rom.bin ] || { echo "[ERROR] no build/rom.bin: run setup.sh with your ROM first"; exit 1; }
 PY="${PYTHON:-python3}"
 rm -rf build/src
-out="$("$PY" tools/rebuild.py build/rom.bin traces/trace_usa.json build/src --as "$AS_PATH" --facts log/toy_story_facts.py --names NAMES_USA --record traces/rebuild_usa.json)"
+out="$("$PY" tools/rebuild.py build/rom.bin traces/trace_usa.json build/src --as "$AS_PATH" --facts log/toy_story_facts.py --names NAMES_USA --blocks BLOCKS_USA --record traces/rebuild_usa.json)"
 echo "$out"
 case "$out" in *"identical (SHA-1"*) echo MATCH ;; *) echo "NO MATCH"; exit 1 ;; esac

@@ -662,3 +662,23 @@ RNC_BLOCKS_USA = [
     (0x3FC6F4, 0x3FC7DA),
     (0x3FC7DC, 0x3FD00B),
 ]
+
+# ---- data blocks for the rebuild (tools/rebuild.py BLOCKS) --------------------
+# (start, end inclusive, name, format): a block counts as source only when every byte of it is what
+# the format says, decoded by a tool here. Each range below is checked frame by frame:
+#   Woody's table: 400 longs; his frames: all 400 decode (tools/frames.py, run-length coded tiles)
+#   and tile $082F1C-$0E4A25 exactly, no gaps, none shared.
+#   Buzz: each group walked frame by frame from its first frame (raw tiles), back to back, the
+#   expected count, nothing else between. Between arm_raised and falling, 288 bytes are not frames.
+BLOCKS_USA = [
+    (0x082784, 0x082DC3, 'woody_frame_table', 'frame_offsets'),
+    (0x082F1C, 0x0E4A25, 'woody_frames', 'frames_rle'),
+    (0x1E9974, 0x1EDD5B, 'buzz_arm_raised_frames', 'frames'),
+    (0x1EDE7C, 0x1FF2D3, 'buzz_falling_frames', 'frames'),
+    (0x1FF2D4, 0x1FF96F, 'buzz_front_frame', 'frames'),
+    (0x1FF970, 0x1FFF6B, 'buzz_stand_frame', 'frames'),
+    (0x1FFF6C, 0x20053B, 'buzz_stride_frame', 'frames'),
+    (0x20053C, 0x2011CD, 'buzz_lunge_frames', 'frames'),
+    (0x2011CE, 0x20194F, 'buzz_wings_out_frame', 'frames'),
+    (0x201950, 0x205C23, 'buzz_carrying_tyre_frames', 'frames'),
+]

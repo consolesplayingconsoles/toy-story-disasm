@@ -26,7 +26,8 @@ named_subs = sum(1 for a in f.NAMES_USA if a in subs)
 named_ram = sum(1 for a in f.NAMES_USA if a >= 0xFF0000)
 
 regions = ([(s, e, c) for s, e, _, c in f.REGIONS_USA] + [(s, e, 'HIGH') for s, e in f.RNC_BLOCKS_USA]
-           + [f.PLAYER_FRAMES_USA + ('HIGH',)] + [(s, e, 'MED') for s, e in f.OBJECT_FRAME_BLOCKS_USA])
+           + [f.PLAYER_FRAMES_USA + ('HIGH',)] + [(s, e, 'MED') for s, e in f.OBJECT_FRAME_BLOCKS_USA]
+           + [(s, e, 'HIGH') for s, e, _, _ in f.BLOCKS_USA])            # checked whole
 conf = {'HIGH': 0, 'MED': 0, 'LOW': 0}
 for _, _, c in regions:
     conf[c] += 1
@@ -89,7 +90,7 @@ documented = sum(1 for a, n in f.NAMES_USA.items() if a in subs and n in docs)
 rows = source_rows('traces/rebuild_usa.json', usa['rom_size'], 'USA ROM') + [
     ('ROM MAP (USA ROM)', '', '%d regions: %d high, %d medium, %d low confidence (incl. %d RNC blocks, %d sprite frame runs)'
      % (len(regions), conf['HIGH'], conf['MED'], conf['LOW'], len(f.RNC_BLOCKS_USA), 1 + len(f.OBJECT_FRAME_BLOCKS_USA))),
-    ('  mapped, bytes', pct(len(covered), usa['rom_size']), 'high and medium confidence ranges'),
+    ('  mapped, bytes', pct(len(covered), usa['rom_size']), 'high and medium confidence ranges, and the data blocks'),
     ('GAME CODE (USA ROM, traced)', '', '%d subroutines, %d bytes of code' % (len(subs), usa['coverage_bytes'])),
     ('  named', pct(named_subs, len(subs)), '%d of %d subroutines (NAMES_USA)' % (named_subs, len(subs))),
     ('  unnamed', pct(len(subs) - named_subs, len(subs)), '%d subroutines (sub_...)' % (len(subs) - named_subs)),
