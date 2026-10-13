@@ -387,6 +387,8 @@ NAMES_USA = {
     0x00239C: 'HBlankInterrupt',     # level-4 vector: jumps through the RAM pointer at HBlankVector
     0x0023A4: 'HBlankWriteReg11',    # an HBlank handler other code installs: VDP reg 11 = $03 (per-line hscroll), return
     0x0023AE: 'HBlankDefault',       # rte: the RAM pointer's default; the unused vectors point into this run of rte (level 2 at the second)
+    0x002138: 'ResetDisplay',        # sets VBlankVector to VBlankDefault, then falls into ResetDisplayVdp (22 callers)
+    0x002142: 'ResetDisplayVdp',     # HBlank back to HBlankDefault, VDP regs 2/4/7/11/12/13/16 rewritten, scroll and plane areas cleared
     0x002210: 'InitVdpRegisters',    # writes VDP registers 0-14, 16-18 and 15 (auto-increment 2)
     0x0022B2: 'ClearVram',           # VRAM write at $0000, 2048 x 8 longs of zero: all 64 KB
     0x00233C: 'ClearCram',           # CRAM write at 0, 64 words of zero
