@@ -9,8 +9,8 @@ game's own routine at $9DE (USA); method 1 is the standard Huffman variant.
 
 Command line (USA ROM: 264 blocks, 243 method 1 and 21 method 2, all CRC-checked):
 
-    python3 scripts/rnc.py <rom> list
-    python3 scripts/rnc.py <rom> extract <hex offset> <out file>
+    python3 tools/rnc.py <rom> list
+    python3 tools/rnc.py <rom> extract <hex offset> <out file>
 """
 import struct
 

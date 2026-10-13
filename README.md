@@ -24,10 +24,10 @@ practical. The fan translations used for diffs are listed in `log/toystory_facts
 ## Building
 
 ```
-python3 scripts/trace.py <rom> traces/trace_usa.json [<hex seed> ...]
-python3 scripts/rnc.py <rom> list
-python3 scripts/rnc.py <rom> extract <hex offset> out.bin
-python3 scripts/frames.py <rom> <hex frame> <hex palette> out.png
+python3 tools/trace.py <rom> traces/trace_usa.json [<hex seed> ...]
+python3 tools/rnc.py <rom> list
+python3 tools/rnc.py <rom> extract <hex offset> out.bin
+python3 tools/frames.py <rom> <hex frame> <hex palette> out.png
 ```
 
 The tracer takes extra manual seeds after the output file. Python 3 only; `trace.py` needs
@@ -40,33 +40,35 @@ The tracer takes extra manual seeds after the output file. Python 3 only; `trace
 | `log/toystory-notes.md` | the narrative: identity, dispatch idioms, coverage, text, graphics |
 | `log/toystory_facts.py` | the structured facts, per revision, with a confidence per entry: identities, names (`NAMES_USA`), the region map (`REGIONS_USA`, `RNC_BLOCKS_USA`) |
 | `traces/` | the USA and EU/PAL traces (addresses only: code, labels, data references) and the ROM-to-ROM diff ranges |
-| `scripts/trace.py` | recursive-descent 68000 tracer |
-| `scripts/rnc.py` | Rob Northen ProPack (RNC) decoder: list or extract the compressed blocks |
-| `scripts/frames.py` | sprite frame decoder: pieces, or a PNG with a palette |
-| `scripts/` (others) | listing, cross references, entropy map, ROM diffs, header, IPS/BPS |
-| `scripts/progress.py` | the Progress block below |
+| `tools/trace.py` | recursive-descent 68000 tracer |
+| `tools/rnc.py` | Rob Northen ProPack (RNC) decoder: list or extract the compressed blocks |
+| `tools/frames.py` | sprite frame decoder: pieces, or a PNG with a palette |
+| `tools/` (others) | listing, cross references, entropy map, ROM diffs, header, IPS/BPS |
+| `tools/progress.py` | the Progress block below |
 
 ## Progress
 
 <!-- progress -->
 ```
-CODE (USA ROM, traced)               135510 bytes, 33524 instructions
-  traced code, of the ROM      3.2%  the rest is art, audio and data
-  indirect calls unresolved       -  5, per-object pointers
-  named routines               0.4%  2 of 448
-  named RAM variables          0.0%  0 of 642 referenced
-  traced code, EU/PAL ROM      3.3%  136874 bytes; 9 dispatch tables, 2 inline jumps
-ROM MAP (USA ROM)                    268 regions: 266 HIGH, 2 MED, 0 LOW (incl. 264 RNC blocks)
-  mapped, bytes               35.8%  HIGH and MED ranges
+ROM MAP (USA ROM)                      358 regions: 267 high, 91 medium, 0 low confidence (incl. 264 RNC blocks, 90 sprite frame runs)
+  mapped, bytes                 79.2%  high and medium confidence ranges
+GAME CODE (USA ROM, traced)            448 subroutines, 135510 bytes of code
+  named                          0.4%  2 of 448 subroutines (NAMES_USA)
+  unnamed                       99.6%  446 subroutines (sub_...)
+  documented                     0.0%  0 named subroutines in *.md
+  named globals                     -  0 of 642 RAM variables referenced
+  traced code, of the ROM        3.2%  the rest is art, audio and data
+  indirect calls unresolved         -  5, per-object pointers
+  traced code, EU/PAL ROM        3.3%  136874 bytes; 9 dispatch tables, 2 inline jumps
 GRAPHICS (USA ROM)
-  RNC blocks decoded         100.0%  264 of 264, 3314612 bytes unpacked
-  sprite frames found             -  1218 object, 400 player
-  object frames identified     5.9%  72 (Buzz Lightyear)
+  RNC blocks decoded           100.0%  264 of 264, 3314612 bytes unpacked
+  sprite frames found               -  1406 object, 400 player
+  object frames identified       5.1%  72 (Buzz Lightyear)
 ```
 <!-- /progress -->
 
-Updated on every commit by `scripts/hooks/pre-commit` from `scripts/progress.py` (enable once per
-clone: `git config core.hooksPath scripts/hooks`).
+Updated on every commit by `tools/hooks/pre-commit` from `tools/progress.py` (enable once per
+clone: `git config core.hooksPath tools/hooks`).
 
 ## Engine
 

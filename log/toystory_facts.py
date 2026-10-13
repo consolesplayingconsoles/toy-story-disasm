@@ -240,8 +240,9 @@ GRAPHICS_USA = {
                      'and $1162 (both read the bank at $B7C and $11AC); then a scan '
                      'for piece runs where tile[i+1] = tile[i] + '
                      'size[i] (1218 object frames)',
-        'object_frames_found': 1218,
-        'player_bank': 0x82784,          # Woody: table of longs, top byte = literal offset/2, low 24 = frame
+        'object_frames_found': 1406,     # the 2026-10-13 scan below (OBJECT_FRAME_BLOCKS_USA); was 1218
+        'player_bank': 0x82784,          # Woody: table of longs, top byte = literal offset/2, low 24 = the frame's
+                                         # offset FROM THE BANK (frame = $82784 + offset): all 400 decode
         'player_frames': 400,            # all decode to their exact size
         'player_rle_routine': 0x1162,    # entry; the bank read is at $11AC
         'player_alt_banks_rnc': [0x25E4E0, 0x2622A8],
@@ -273,6 +274,108 @@ GRAPHICS_USA = {
         'confidence': 'LOW',
     },
 }
+
+# ---- sprite frame data (USA coords) -------------------------------------------
+# Woody's 400 run-length coded frames sit back to back after his bank: each frame's extent is its
+# header, pieces, command bytes and literal longs (tools/frames.py's format), all 400 decoding to
+# their exact size.
+PLAYER_FRAMES_USA = (0x082F1C, 0x0E4A25)
+# Object frames found by scanning for the frame header (w0 = 6 + 6*count, 1-40 pieces, each piece's
+# first tile the running sum of the earlier sizes, size = the pieces' tiles) outside the traced code,
+# the RNC blocks and the player frames; single-piece frames only next to another frame. 1406
+# frames, merged into runs (gaps of 16 bytes or less). A random sample of 48 all rendered as
+# real sprites (Woody, Buzz, Rex, Hamm, Mr Potato Head, Babyface, RC, the planes, the shoe).
+OBJECT_FRAME_BLOCKS_USA = [
+    (0x0E4A26, 0x0E4F61),
+    (0x0E52BE, 0x0E5839),
+    (0x0E5B9A, 0x0E60D5),
+    (0x0E649A, 0x0E69DB),
+    (0x0E6D24, 0x0E715F),
+    (0x0E741E, 0x0E788D),
+    (0x0E7B46, 0x0E7F7B),
+    (0x0E8290, 0x0E877D),
+    (0x0E8B34, 0x0E90B5),
+    (0x0E9490, 0x0E9A0B),
+    (0x0E9DD8, 0x0EA3CD),
+    (0x0EA78A, 0x0EACC5),
+    (0x0EB07E, 0x0EB5F9),
+    (0x0EB9D8, 0x0EBF33),
+    (0x0EC358, 0x0EC807),
+    (0x0ECB20, 0x0ECFE1),
+    (0x0ED2D8, 0x0ED78D),
+    (0x0EDA9C, 0x0EDF91),
+    (0x0EE288, 0x0EE769),
+    (0x0EEA7A, 0x0EEF2F),
+    (0x0EF25A, 0x0EF70F),
+    (0x0EFA42, 0x0EFEDD),
+    (0x0F0240, 0x0F0721),
+    (0x0F0A98, 0x0F0FF9),
+    (0x0F1350, 0x0F18B7),
+    (0x0F1C12, 0x0F214D),
+    (0x0F24EA, 0x0F2A4B),
+    (0x0F2D9A, 0x0F32C9),
+    (0x0F3686, 0x0F3BC1),
+    (0x0F3F74, 0x0F44D5),
+    (0x0F4848, 0x0F4DA9),
+    (0x0F5106, 0x0F5647),
+    (0x0F59B6, 0x0F5ED1),
+    (0x0F6294, 0x0F67F5),
+    (0x0F6BDC, 0x0F7183),
+    (0x0F75B2, 0x0F7B85),
+    (0x0F7FB4, 0x0F85C7),
+    (0x0F9446, 0x0FD8F5),
+    (0x0FDBF6, 0x1266B1),
+    (0x1268CA, 0x13C4C7),
+    (0x13C67C, 0x1449B5),
+    (0x144A76, 0x146805),
+    (0x146846, 0x147801),
+    (0x147862, 0x14C84F),
+    (0x14C8D0, 0x152741),
+    (0x1527CE, 0x157373),
+    (0x158E08, 0x16D2F5),
+    (0x16D456, 0x176F5B),
+    (0x177060, 0x18569D),
+    (0x185746, 0x18AC7B),
+    (0x18BB88, 0x18CC21),
+    (0x18D360, 0x1916B5),
+    (0x191776, 0x19A287),
+    (0x19A368, 0x1A183D),
+    (0x1A18DE, 0x1A958F),
+    (0x1A9624, 0x1B0807),
+    (0x1B76A8, 0x1BA081),
+    (0x1BA112, 0x1BC617),
+    (0x1BC6A8, 0x1BFAF1),
+    (0x1BFB72, 0x1C0A9D),
+    (0x1C0B1E, 0x1C5157),
+    (0x1C5278, 0x1D8EBF),
+    (0x1D9064, 0x1E7885),
+    (0x1E9974, 0x1EDD5B),
+    (0x1EDE7C, 0x205C23),
+    (0x22D2C0, 0x22DE37),
+    (0x22E6A8, 0x244A81),
+    (0x244ADE, 0x24E0C1),
+    (0x24E122, 0x2582F9),
+    (0x25835A, 0x25E4DF),
+    (0x2E16DC, 0x2E1CA3),
+    (0x2E1CC4, 0x2E35A5),
+    (0x2E6C42, 0x2EE57B),
+    (0x2EE600, 0x2F02CF),
+    (0x2F0354, 0x2F2127),
+    (0x2F21AC, 0x2F3ED7),
+    (0x2F3F08, 0x2F5A4F),
+    (0x2F5B18, 0x2FBE71),
+    (0x30690C, 0x309419),
+    (0x30AF76, 0x30B493),
+    (0x30B546, 0x311405),
+    (0x312888, 0x3189E5),
+    (0x31F3F4, 0x322269),
+    (0x325CC2, 0x32A83F),
+    (0x3305C8, 0x3351DF),
+    (0x33A1B0, 0x33BDE9),
+    (0x33BE4A, 0x33D8F9),
+    (0x33D90E, 0x33E349),
+    (0x3D564E, 0x3DA9E1),
+]
 
 # ---- names and region map (USA coords) ---------------------------------------
 # Read from the code (traces/trace_usa.json). NAMES_USA: address -> name.

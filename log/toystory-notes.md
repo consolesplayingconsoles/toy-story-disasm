@@ -257,12 +257,12 @@ span).
 The compressed art the French translators "couldn't decompress" is **Rob
 Northen ProPack (RNC)**. The USA ROM holds 264 `RNC` blocks (243 method 1,
 Huffman; 21 method 2), 3.3 MB unpacked, and every one decodes with a matching
-CRC16 (`scripts/rnc.py`, `rnc.py <rom> list`). Method 2 follows the game's own
+CRC16 (`tools/rnc.py`, `rnc.py <rom> list`). Method 2 follows the game's own
 decompressor, entered at `$960` (it checks the `RNC` method-2 magic first).
 
 Sprites were found from the other end: the DMA queue (`$AD1E`) leads to the
 player frame routines (entered at `$B2E` and `$1162`, both reading the frame
-bank), which give the frame format (`scripts/frames.py`). Contact sheets of the raw tiles had failed
+bank), which give the frame format (`tools/frames.py`). Contact sheets of the raw tiles had failed
 because the tile order only makes sense through each frame's piece list. With
 the format known, a scan for piece runs (each piece's first tile is the sum of
 the earlier pieces' sizes) finds 1218 object frames. Woody's 400 player frames
@@ -270,6 +270,13 @@ sit in the run-length-coded bank at `$82784`; objects store raw tiles. Buzz
 Lightyear's frames, their palette and the frame groups are in `GRAPHICS_USA`
 in `toystory_facts.py`. One caution from using them: Buzz's long run of
 leg-moving frames looks like a walk cycle but is a fall.
+
+Mapping the frames (2026-10-13). A player bank entry's low 24 bits are the frame's offset
+from the bank, not an address: with `$82784 +` all 400 decode, and they sit back to back at
+`$82F1C-$E4A25` (`PLAYER_FRAMES_USA`). A tighter object scan (outside the traced code, the RNC
+blocks and the player frames; single-piece frames only next to another frame) finds 1406
+object frames in 89 runs (`OBJECT_FRAME_BLOCKS_USA`); a random sample of 48 all rendered as
+real sprites. Together they map 1.9 MB, taking the mapped share of the ROM from 35.8% to 79.2%.
 
 ## Open items / next steps if resuming
 

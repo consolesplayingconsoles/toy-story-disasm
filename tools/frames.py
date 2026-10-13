@@ -17,8 +17,8 @@ low 24 bits = frame) stores them run-length coded (the routine at $1162): comman
 
 Command line:
 
-    python3 scripts/frames.py <rom> <hex frame address>              pieces
-    python3 scripts/frames.py <rom> <hex frame address> <hex palette> <out.png>
+    python3 tools/frames.py <rom> <hex frame address>              pieces
+    python3 tools/frames.py <rom> <hex frame address> <hex palette> <out.png>
 """
 import struct, sys, zlib
 
