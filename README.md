@@ -58,6 +58,7 @@ python3 tools/frames.py <rom> <hex frame> <hex palette> out.png
 | `tools/trace.py` | recursive-descent 68000 tracer |
 | `tools/rnc.py` | Rob Northen ProPack (RNC) decoder: list or extract the compressed blocks |
 | `tools/frames.py` | sprite frame decoder: pieces, or a PNG with a palette |
+| `tools/frame_blocks.py` | splits every identified frame into header and tiles for the rebuild (`log/toy_story_frame_blocks.py`) |
 | `tools/` (others) | listing, cross references, entropy map, ROM diffs, header, IPS/BPS |
 | `tools/progress.py` | the Progress block below |
 
