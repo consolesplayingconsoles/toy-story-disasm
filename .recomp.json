@@ -1,0 +1,25 @@
+{
+  "$schema": "https://recomp.fyi/schema/v1.json",
+  "game": "Toy Story",
+  "system": "Genesis",
+  "type": "decomp",
+  "original": [
+    {
+      "region": "USA",
+      "sha1": "49be571cd943fd594949c318a0bdbe6263fdd512"
+    },
+    {
+      "region": "Europe",
+      "sha1": "6e7bb9b191389973922a5ab9978205bb9d2664cc"
+    }
+  ],
+  "project": "Toy Story disassembly",
+  "status": "in-progress",
+  "approach": "Disassembly rebuilt byte for byte from one source file per routine",
+  "maintainers": [
+    {
+      "name": "consolesplayingconsoles",
+      "link": "https://github.com/consolesplayingconsoles"
+    }
+  ]
+}
