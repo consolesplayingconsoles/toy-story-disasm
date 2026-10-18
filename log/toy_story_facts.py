@@ -387,12 +387,22 @@ NAMES_USA = {
     0x00239C: 'HBlankInterrupt',     # level-4 vector: jumps through the RAM pointer at HBlankVector
     0x0023A4: 'HBlankWriteReg11',    # an HBlank handler other code installs: VDP reg 11 = $03 (per-line hscroll), return
     0x0023AE: 'HBlankDefault',       # rte: the RAM pointer's default; the unused vectors point into this run of rte (level 2 at the second)
+    0x0008CC: 'ReadLongBE',          # d0 = 4 bytes from (a0)+, big-endian
+    0x000B22: 'ReadLongBE_Copy',     # the same routine, a second copy
+    0x00A6AC: 'LoadPaletteLine0',    # a0 = 16 colour words to PaletteBuffer line 0
+    0x00A6BE: 'LoadPaletteLine1',    # the same to line 1 ($FFFF04D4)
+    0x00A6D0: 'LoadPaletteLine2',    # line 2 ($FFFF04F4)
+    0x00A6E2: 'LoadPaletteLine3',    # line 3 ($FFFF0514)
+    0xFFFF04B4: 'PaletteBuffer',     # 4 lines x 16 colour words, loaded from the palette table; PaletteCopy takes 32 longs of it
+    0xFFFF0534: 'PaletteCopy',       # 64 words, copied from PaletteBuffer by several routines
     0x002138: 'ResetDisplay',        # sets VBlankVector to VBlankDefault, then falls into ResetDisplayVdp (22 callers)
     0x002142: 'ResetDisplayVdp',     # HBlank back to HBlankDefault, VDP regs 2/4/7/11/12/13/16 rewritten, scroll and plane areas cleared
     0x002210: 'InitVdpRegisters',    # writes VDP registers 0-14, 16-18 and 15 (auto-increment 2)
     0x0022B2: 'ClearVram',           # VRAM write at $0000, 2048 x 8 longs of zero: all 64 KB
     0x00233C: 'ClearCram',           # CRAM write at 0, 64 words of zero
     0x002358: 'ClearVsram',          # VSRAM write at 0, 64 words of zero
+    0x01A4DA: 'ShowTimedScreen',     # loads one RNC block (rnc_374F7A), then waits up to 300 frames, ended early when the pad bits $F0 clear
+    0x000754: 'RncUnpack1',          # RNC method 1 ('RNC' $01): a0 = packed stream, a1 = destination; 79 callers
     0x000960: 'RncUnpack2',          # RNC method 2: checks the magic, unpacks in place
     0x00AB1E: 'WaitFrames',          # clears VBlankSeen and waits for it, d0+1 times
     0x00AD1E: 'QueueDma',            # the DMA queue the sprite loaders feed
@@ -716,3 +726,16 @@ from toy_story_frame_blocks import FRAME_TILE_BLOCKS_USA
 BLOCKS_USA = [
     (0x082784, 0x082DC3, 'woody_frame_table', 'frame_offsets'),
 ] + FRAME_TILE_BLOCKS_USA
+
+# Stepping stone, not a claim of content: every RNC block decodes with a matching checksum, so its
+# bytes are a known format. 'recognised_*' is not a leaf format: progress.py reports these bytes on
+# their own row and keeps them out of "done: equivalent source" until a block is identified.
+# RNC blocks whose content is identified: address -> (name, format). Evidence goes beside each.
+IDENTIFIED_RNC_USA = {
+    # 5504 bytes = 172 4bpp tiles of letter and digit shapes (rendered); five of its seven loaders unpack it
+    # to RAM and queue it to VRAM $1860 (size $AC0 words), the others to $0020 and $6000.
+    0x26D3A6: ('FontTiles', 'compressed_tiles'),
+}
+BLOCKS_USA += [(s, e, IDENTIFIED_RNC_USA.get(s, ('rnc_%06X' % s,))[0],
+                IDENTIFIED_RNC_USA.get(s, (0, 'recognised_rnc'))[1]) for s, e in RNC_BLOCKS_USA]
+NAMES_USA.update({s: IDENTIFIED_RNC_USA.get(s, ('rnc_%06X' % s,))[0] for s, e in RNC_BLOCKS_USA})   # code that points at a block says what it points at
