@@ -387,6 +387,11 @@ NAMES_USA = {
     0x00239C: 'HBlankInterrupt',     # level-4 vector: jumps through the RAM pointer at HBlankVector
     0x0023A4: 'HBlankWriteReg11',    # an HBlank handler other code installs: VDP reg 11 = $03 (per-line hscroll), return
     0x0023AE: 'HBlankDefault',       # rte: the RAM pointer's default; the unused vectors point into this run of rte (level 2 at the second)
+    0x076C8C: 'LoadZ80Driver',       # requests the Z80 bus, copies $043650-$044EB0 (6241 bytes, Z80Driver) to Z80 RAM, zero-fills to $A02000
+    0x076CD0: 'ResetZ80',            # reset low, a short delay, bus released, reset high
+    0x076BE2: 'RequestZ80Bus',       # BUSREQ, wait for the grant
+    0x076C6E: 'RequestZ80Bus_Copy',  # the same, a second copy
+    0x076BF6: 'ReleaseZ80Bus',       # BUSREQ cleared
     0x0008CC: 'ReadLongBE',          # d0 = 4 bytes from (a0)+, big-endian
     0x000B22: 'ReadLongBE_Copy',     # the same routine, a second copy
     0x00A6AC: 'LoadPaletteLine0',    # a0 = 16 colour words to PaletteBuffer line 0
@@ -739,3 +744,8 @@ IDENTIFIED_RNC_USA = {
 BLOCKS_USA += [(s, e, IDENTIFIED_RNC_USA.get(s, ('rnc_%06X' % s,))[0],
                 IDENTIFIED_RNC_USA.get(s, (0, 'recognised_rnc'))[1]) for s, e in RNC_BLOCKS_USA]
 NAMES_USA.update({s: IDENTIFIED_RNC_USA.get(s, ('rnc_%06X' % s,))[0] for s, e in RNC_BLOCKS_USA})   # code that points at a block says what it points at
+
+# The Z80 sound program: LoadZ80Driver copies from the label at $043650 up to the label at $044EB1 (6241 bytes)
+# into Z80 RAM, and the block between them is exactly those 6241 bytes. Recognised (known program, not yet
+# written as Z80 source), not a leaf asset.
+BLOCKS_USA += [(0x043650, 0x044EB0, 'Z80Driver', 'recognised_z80')]

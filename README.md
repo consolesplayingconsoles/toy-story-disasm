@@ -71,17 +71,17 @@ python3 tools/frames.py <rom> <hex frame> <hex palette> out.png
 SOURCE (USA ROM)                       2921 blocks: 485 code, 2436 data
   done: equivalent source       24.7%  rebuilds byte-identical; named code with every label and operand named; named leaf assets, structured data as source
   rebuilds byte-identical           -  yes
-  code as source                 0.0%  10 of 135478 code bytes: named routine, labels and operands (addresses, struct fields) named
+  code as source                 0.0%  20 of 135478 code bytes: named routine, labels and operands (addresses, struct fields) named
   data as source                25.5%  1034269 of 4058826 data bytes: named leaf asset, or written as source
-  recognised, not counted       31.7%  1328760 bytes, 266 blocks: a known format or program, content not yet identified or not yet written as source; not in the figures above
+  recognised, not counted       31.8%  1335001 bytes, 267 blocks: a known format or program, content not yet identified or not yet written as source; not in the figures above
   local labels named             0.1%  5 of 3851 labels inside routines
   struct fields named            0.0%  0 of 4129 displacements off an address register
   named constants                   -  not required: an ID and a count look alike
-ROM MAP (USA ROM)                      1392 regions: 1301 high, 91 medium, 0 low confidence (incl. 264 RNC blocks, 90 sprite frame runs)
-  mapped, bytes                 79.2%  high and medium confidence ranges, and the data blocks
+ROM MAP (USA ROM)                      1393 regions: 1302 high, 91 medium, 0 low confidence (incl. 264 RNC blocks, 90 sprite frame runs)
+  mapped, bytes                 79.4%  high and medium confidence ranges, and the data blocks
 GAME CODE (USA ROM, traced)            448 subroutines, 135530 bytes of code
-  named                          3.8%  17 of 448 subroutines (NAMES_USA)
-  unnamed                       96.2%  431 subroutines (sub_...)
+  named                          4.9%  22 of 448 subroutines (NAMES_USA)
+  unnamed                       95.1%  426 subroutines (sub_...)
   documented                     0.0%  0 named subroutines in *.md
   named globals                     -  5 of 642 RAM variables referenced
   traced code, of the ROM        3.2%  the rest is art, audio and data
